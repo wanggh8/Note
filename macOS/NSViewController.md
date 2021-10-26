@@ -12,7 +12,13 @@ typora-root-url: ../
 -[NSNib _initWithNibNamed:bundle:options:] could not load the nibName: NSViewController in bundle (null).
 ```
 
+解决办法：重写 `loadView` 方法
 
+```objc
+- (void)loadView {
+
+}
+```
 
 
 
