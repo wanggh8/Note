@@ -8,7 +8,7 @@ categories: Git
 description: Git LFS
 cover: /images/Git.png
 top_img: /images/Git.png
-typora-root-url: ../../../source/
+typora-root-url: ../
 ---
 
 Git LFS 是 Github 开发的一个 Git 的扩展，用于实现 Git 对大文件的支持
