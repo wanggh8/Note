@@ -11,6 +11,8 @@ top_img: /images/Git.png
 typora-root-url: ../../../source
 ---
 
+# Git Manual
+
 ## Git 简介
 
 Git 是目前世界上最先进的分布式版本控制系统。SVN 是集中式版本控制系统，版本库是集中放在中央服务器的。Git是分布式版本控制系统，那么它就没有中央服务器的，每个人的电脑就是一个完整的版本库。Git 配置用户标识：
