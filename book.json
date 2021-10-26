@@ -1,14 +1,17 @@
 {
     "title": "Note",
-    "plugins": [ 
-        "code",         
+    "plugins": [
+        "code",
         "alerts",
         "anchor-navigation-ex",
         "search-plus"
     ],
-    "pluginsConfig": {       
-        "code": {           
+    "pluginsConfig": {
+        "code": {
             "copyButtons": true
+        },
+        "anchor-navigation-ex": {
+            "multipleH1": false
         }
     }
 }
