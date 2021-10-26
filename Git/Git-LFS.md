@@ -5,6 +5,8 @@ description: Git LFS
 typora-root-url: ../
 ---
 
+# Git LFS
+
 Git LFS 是 Github 开发的一个 Git 的扩展，用于实现 Git 对大文件的支持
 
 ![a diagram showing how Git LFS works](/assets/graphic.gif)
