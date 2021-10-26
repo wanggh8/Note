@@ -2,7 +2,7 @@
 title: Git Manual
 categories: Git
 description: Git Manual
-typora-root-url: ../../../source
+typora-root-url: ../
 ---
 
 # Git Manual
@@ -11,16 +11,16 @@ typora-root-url: ../../../source
 
 Git 是目前世界上最先进的分布式版本控制系统。SVN 是集中式版本控制系统，版本库是集中放在中央服务器的。Git是分布式版本控制系统，那么它就没有中央服务器的，每个人的电脑就是一个完整的版本库。Git 配置用户标识：
 
-```sh
+```shell
 $ git config --global user.name "Gh.Wang"
 $ git config --global user.email "1299927852@qq.com"
 ```
 
-## 本地基本使用
+## Git 使用
 
 选择一个空目录，路径最好不包含中文，然后使用 `git init` 可以把这个目录变成Git可以管理的仓库，只会可以用 `git add` 命令将文件添加到仓库暂存区中，然后可以用 `git commit` 提交到版本库分支中
 
-```sh
+```shell
 $ git add readme.txt
 $ git commit -m "wrote a readme file"
 ```
@@ -34,7 +34,7 @@ $ git commit -m "wrote a readme file"
 
 如果要删除某个文件的话就直接使用`rm`命令,不过此时并没有在版本库中删除，如果确实要从版本库中删除需要使用
 
-```
+```shell
 $ git rm test.txt
 $ git commit -m "remove test.txt"
 ```
@@ -61,11 +61,11 @@ $ git commit -m "remove test.txt"
 - 指定标签信息:`git tag -a <tagname> -m "blablabla..."`
 - 查看所有标签:`git tag`
 
-## 远程仓库
+### 远程仓库
 
 首先需要创建SSH Key，使用命令：
 
-```
+```shell
 $ ssh-keygen -t rsa -C "1299927852@qq.com"
 ```
 
@@ -73,7 +73,7 @@ $ ssh-keygen -t rsa -C "1299927852@qq.com"
 
 添加远程库，使github上的远程库与本地库同步，使用命令：
 
-```git
+```shell
 $ git remote add origin git@gitee.com:wanggh8/resume.git
 ```
 
@@ -81,5 +81,44 @@ $ git remote add origin git@gitee.com:wanggh8/resume.git
 
 从远程库克隆时，使用` git pull git@gitee.com:wanggh8/resume.git`
 
-使用码云时大部分只需要将github替换成gitee就可以了，可以同时关联两个远程库，但名字应该不同。
+使用码云时大部分只需要将 github 替换成 gitee 就可以了，可以同时关联两个远程库，但名字应该不同。
 
+## Git规范
+
+### Git分支
+
+1. master 存储正式发布历史的主分支，不能直接在`master`上进行修改代码和提交。
+2. dev 作为开发分支，开发完成需要提交测试的功能合并到该分支，共同维护的开发分支。
+3. release 上线前的 预览分支，可用于测试人员测试要上线的正式版，测试完成后PR到`master`。
+4. feature 基于`dev`创建的临时分支，用于开发新功能或新模块，在本地与`dev`合并后PR到`dev`分支。
+
+### Git 命令行操作流程
+
+```shell
+// 本地分支 local
+git pull origin local
+git add .
+git commit -m ''   // 这里需写明这次提交的改动说明（必须提交），以便以后回退找到对应的指针
+git push origin local
+     
+git checkout dev 
+git pull origin dev 
+     
+git checkout local  //切换到自己的分支
+git merge dev   // 有冲突解决冲突，让冲突发生在自己本地分支
+     
+git checkeout dev 
+git merge local  //更新代码到 dev 分支
+     
+git add .
+git commit -m "merge local 实现的功能"
+git push origin dev
+```
+
+### TAG命名
+
+采用三段式＋日期，v版本.里程碑.序号，如v1.2.1-20200801
+
+- Bug修复并上线，修改第3位   
+- 架构升级或重大调整，修改第2位
+- 新功能上线或者模块调整，修改第2位
