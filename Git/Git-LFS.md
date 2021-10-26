@@ -1,13 +1,7 @@
 ---
 title: Git LFS 
-date: 2021-05-26
-updated: 2021-05-26
-tags: 
-  - Git
 categories: Git
 description: Git LFS
-cover: /images/Git.png
-top_img: /images/Git.png
 typora-root-url: ../
 ---
 
