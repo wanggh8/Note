@@ -103,3 +103,12 @@ rm -fr dir # 强制删除目录dir中的所有文件
 
 
 ### vim
+
+## FAQ
+
+### oh-my-zsh git 慢/卡顿问题解决
+
+```sh
+git config --add oh-my-zsh.hide-dirty 1
+git config --add oh-my-zsh.hide-status 1
+```
