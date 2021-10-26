@@ -4,9 +4,9 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>App Sandbox · Note</title>
+        <title>Mac终端zsh忽略大小写 · Note</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="description" content="macOS">
+        <meta name="description" content="Mac终端zsh忽略大小写">
         <meta name="generator" content="GitBook 3.2.3">
         
         
@@ -77,7 +77,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="NSViewController.html" />
+    <link rel="next" href="Mac键盘快捷键.html" />
     
     
     <link rel="prev" href="./" />
@@ -122,9 +122,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="./">
+        <li class="chapter " data-level="1.2" data-path="../macOS/">
             
-                <a href="./">
+                <a href="../macOS/">
             
                     
                     macOS
@@ -136,9 +136,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.2.1" data-path="App-Sandbox.html">
+        <li class="chapter " data-level="1.2.1" data-path="../macOS/App-Sandbox.html">
             
-                <a href="App-Sandbox.html">
+                <a href="../macOS/App-Sandbox.html">
             
                     
                     App Sandbox
@@ -149,9 +149,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="NSViewController.html">
+        <li class="chapter " data-level="1.2.2" data-path="../macOS/NSViewController.html">
             
-                <a href="NSViewController.html">
+                <a href="../macOS/NSViewController.html">
             
                     
                     NSViewController
@@ -212,9 +212,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="../Mac/">
+        <li class="chapter " data-level="1.4" data-path="./">
             
-                <a href="../Mac/">
+                <a href="./">
             
                     
                     Mac
@@ -226,9 +226,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.1" data-path="../Mac/Mac终端zsh忽略大小写.html">
+        <li class="chapter active" data-level="1.4.1" data-path="Mac终端zsh忽略大小写.html">
             
-                <a href="../Mac/Mac终端zsh忽略大小写.html">
+                <a href="Mac终端zsh忽略大小写.html">
             
                     
                     Mac终端zsh忽略大小写
@@ -239,9 +239,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2" data-path="../Mac/Mac键盘快捷键.html">
+        <li class="chapter " data-level="1.4.2" data-path="Mac键盘快捷键.html">
             
-                <a href="../Mac/Mac键盘快捷键.html">
+                <a href="Mac键盘快捷键.html">
             
                     
                     Mac键盘快捷键
@@ -252,9 +252,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.3" data-path="../Mac/Mac开源软件.html">
+        <li class="chapter " data-level="1.4.3" data-path="Mac开源软件.html">
             
-                <a href="../Mac/Mac开源软件.html">
+                <a href="Mac开源软件.html">
             
                     
                     Mac开源软件
@@ -265,9 +265,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.4" data-path="../Mac/zsh.html">
+        <li class="chapter " data-level="1.4.4" data-path="zsh.html">
             
-                <a href="../Mac/zsh.html">
+                <a href="zsh.html">
             
                     
                     Mac zsh
@@ -313,7 +313,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >App Sandbox</a>
+        <a href=".." >Mac终端zsh忽略大小写</a>
     </h1>
 </div>
 
@@ -331,7 +331,14 @@
     
                                 <section class="normal markdown-section">
                                 
-                                
+                                <p>Mac &#x7EC8;&#x7AEF;&#x9ED8;&#x8BA4;&#x662F;&#x5927;&#x5C0F;&#x5199;&#x4E0D;&#x654F;&#x611F;&#x7684;&#xFF0C;cd desktop &#x5176;&#x5B9E;&#x4E5F;&#x80FD;&#x5207;&#x5230;&#x684C;&#x9762;&#xFF0C;&#x4F46;&#x662F;&#x65E0;&#x6CD5;&#x901A;&#x8FC7;tab&#x8865;&#x5168;&#x3002;
+&#x5982;&#x679C;&#x4F60;&#x5DF2;&#x7ECF;&#x4F7F;&#x7528;&#x4E86;zsh&#xFF0C;&#x90A3;&#x4E48;&#x4E00;&#x822C;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4FEE;&#x6539;.inputrc &#x5E76;&#x6CA1;&#x6709;&#x6548;&#x679C;&#x3002;
+&#x5728;.zshrc &#x91CC;&#x6DFB;&#x52A0;&#x4E0B;&#x9762;&#x4E24;&#x4E2A;&#x547D;&#x4EE4;&#x5E76;&#x91CD;&#x542F;&#x540E;&#x53EF;&#x4EE5;&#x5FFD;&#x7565;&#x5927;&#x5C0F;&#x5199;&#x3002;</p>
+<pre><code class="lang-sh"><span class="hljs-comment"># Ignore lower upper</span>
+<span class="hljs-built_in">autoload</span> -Uz compinit &amp;&amp; compinit -u
+<span class="hljs-built_in">zstyle</span> <span class="hljs-string">&apos;:completion:*&apos;</span> matcher-list <span class="hljs-string">&apos;m:{[:lower:][:upper:]}={[:upper:][:lower:]}&apos;</span> <span class="hljs-string">&apos;m:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*&apos;</span> <span class="hljs-string">&apos;m:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*&apos;</span> <span class="hljs-string">&apos;m:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*&apos;</span>
+</code></pre>
+
                                 
                                 </section>
                             
@@ -374,12 +381,12 @@
 
             
                 
-                <a href="./" class="navigation navigation-prev " aria-label="Previous page: macOS">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Mac">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="NSViewController.html" class="navigation navigation-next " aria-label="Next page: NSViewController">
+                <a href="Mac键盘快捷键.html" class="navigation navigation-next " aria-label="Next page: Mac键盘快捷键">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -390,7 +397,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"date":"2020-05-05T00:00:00.000Z","cover":"/images/Xcode.png","title":"App Sandbox","tags":["macOS","Objective-C"],"top_img":"/images/Xcode.png","updated":"2020-05-05T00:00:00.000Z","categories":"macOS","description":"macOS","typora-root-url":"../../../source","level":"1.2.1","depth":2,"next":{"title":"NSViewController","level":"1.2.2","depth":2,"path":"macOS/NSViewController.md","ref":"macOS/NSViewController.md","articles":[]},"previous":{"title":"macOS","level":"1.2","depth":1,"path":"macOS/README.md","ref":"macOS/README.md","articles":[{"title":"App Sandbox","level":"1.2.1","depth":2,"path":"macOS/App-Sandbox.md","ref":"macOS/App-Sandbox.md","articles":[]},{"title":"NSViewController","level":"1.2.2","depth":2,"path":"macOS/NSViewController.md","ref":"macOS/NSViewController.md","articles":[]}]},"dir":"neutral"},"config":{"plugins":["code","alerts","anchors","anchor-navigation-ex","search-plus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"alerts":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Note","gitbook":"*"},"file":{"path":"macOS/App-Sandbox.md","mtime":"2021-10-26T03:18:52.691Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-10-26T06:30:55.376Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"date":"2021-05-25T00:00:00.000Z","cover":"/images/MacOS.jpg","title":"Mac终端zsh忽略大小写","tags":["Mac"],"top_img":"/images/MacOS.jpg","updated":"2021-05-25T00:00:00.000Z","categories":"Mac","description":"Mac终端zsh忽略大小写","typora-root-url":"../../../source","level":"1.4.1","depth":2,"next":{"title":"Mac键盘快捷键","level":"1.4.2","depth":2,"path":"Mac/Mac键盘快捷键.md","ref":"Mac/Mac键盘快捷键.md","articles":[]},"previous":{"title":"Mac","level":"1.4","depth":1,"path":"Mac/README.md","ref":"Mac/README.md","articles":[{"title":"Mac终端zsh忽略大小写","level":"1.4.1","depth":2,"path":"Mac/Mac终端zsh忽略大小写.md","ref":"Mac/Mac终端zsh忽略大小写.md","articles":[]},{"title":"Mac键盘快捷键","level":"1.4.2","depth":2,"path":"Mac/Mac键盘快捷键.md","ref":"Mac/Mac键盘快捷键.md","articles":[]},{"title":"Mac开源软件","level":"1.4.3","depth":2,"path":"Mac/Mac开源软件.md","ref":"Mac/Mac开源软件.md","articles":[]},{"title":"Mac zsh","level":"1.4.4","depth":2,"path":"Mac/zsh.md","ref":"Mac/zsh.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["code","alerts","anchors","anchor-navigation-ex","search-plus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"alerts":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Note","gitbook":"*"},"file":{"path":"Mac/Mac终端zsh忽略大小写.md","mtime":"2021-10-25T02:39:27.668Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-10-26T06:30:55.376Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
