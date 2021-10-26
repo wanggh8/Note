@@ -6,8 +6,6 @@ tags:
   - Mac
 categories: Mac
 description: Xcode使用总结
-cover: /images/MacOS.jpg
-top_img: /images/MacOS.jpg
 typora-root-url: ../../../source
 ---
 
