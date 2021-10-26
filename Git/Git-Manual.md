@@ -1,13 +1,7 @@
 ---
 title: Git Manual
-date: 2019-03-01
-updated: 2021-06-05
-tags: 
-  - Git
 categories: Git
 description: Git Manual
-cover: /images/Git.png
-top_img: /images/Git.png
 typora-root-url: ../../../source
 ---
 
@@ -22,7 +16,7 @@ $ git config --global user.name "Gh.Wang"
 $ git config --global user.email "1299927852@qq.com"
 ```
 
-#### 本地基本使用
+## 本地基本使用
 
 选择一个空目录，路径最好不包含中文，然后使用 `git init` 可以把这个目录变成Git可以管理的仓库，只会可以用 `git add` 命令将文件添加到仓库暂存区中，然后可以用 `git commit` 提交到版本库分支中
 
@@ -47,7 +41,11 @@ $ git commit -m "remove test.txt"
 
 如果误删，则可以使用`git checkout -- test.txt`恢复到最新版本。
 
-#### 分支与标签
+### 更新 Git 缓存
+
+更新缓存 `git rm -r --cached .`
+
+### 分支与标签
 
 - 创建并切换分支:`$ git checkout -b name`
 
@@ -63,7 +61,7 @@ $ git commit -m "remove test.txt"
 - 指定标签信息:`git tag -a <tagname> -m "blablabla..."`
 - 查看所有标签:`git tag`
 
-#### 远程仓库
+## 远程仓库
 
 首先需要创建SSH Key，使用命令：
 
@@ -84,8 +82,4 @@ $ git remote add origin git@gitee.com:wanggh8/resume.git
 从远程库克隆时，使用` git pull git@gitee.com:wanggh8/resume.git`
 
 使用码云时大部分只需要将github替换成gitee就可以了，可以同时关联两个远程库，但名字应该不同。
-
-#### 更新 Git 缓存
-
-更新缓存 `git rm -r --cached .`
 

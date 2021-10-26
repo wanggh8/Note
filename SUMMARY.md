@@ -7,7 +7,7 @@
     * [NSViewController](macOS/NSViewController.md)
 
 * [Git](Git/README.md)
-    * [GitManual](Git/GitManual.md)
+    * [Git Manual](Git/Git-Manual.md)
     * [Git LFS](Git/Git-LFS.md)
 
 * [Mac](Mac/README.md)
