@@ -9,7 +9,7 @@ typora-root-url: ../
 
 Git LFS 是 Github 开发的一个 Git 的扩展，用于实现 Git 对大文件的支持
 
-![a diagram showing how Git LFS works](/assets/graphic.gif)
+![a diagram showing how Git LFS works](https://gitee.com/wanggh8/upic/raw/master/uPic/graphic.gif)
 
 ## 使用目的
 
@@ -30,8 +30,8 @@ LFS (Large File Storage) 就是为了解决这一问题而产生的工具。它�
 
 ### *Mac*
 
-2. `brew install git-lfs`
-3. `git lfs install`
+1. `brew install git-lfs`
+2. `git lfs install`
 
 ### *Windows*
 
