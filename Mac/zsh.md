@@ -1,14 +1,8 @@
 ---
 title: Mac终端zsh常用命令
-date: 2021-05-25
-updated: 2021-05-25
-tags: 
-  - Mac
 categories: Mac
 description: Mac终端zsh常用命令 
 cover: /images/MacOS.jpg
-top_img: /images/MacOS.jpg
-typora-root-url: ../../../source
 ---
 
 ### cd 切换到目录

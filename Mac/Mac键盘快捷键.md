@@ -1,14 +1,8 @@
 ---
 title: Mac键盘快捷键
-date: 2020-10-25
-updated: 2020-10-30 
-tags: 
-  - Mac
 categories: Mac
 description: Xcode使用总结
 cover: /images/MacOS.jpg
-top_img: /images/MacOS.jpg
-typora-root-url: ../../../source
 ---
 
 ### 键盘按键使用符合

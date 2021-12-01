@@ -1,12 +1,8 @@
 ---
 title: Mac终端zsh忽略大小写 
-date: 2021-05-25
-updated: 2021-05-25
 categories: Mac
 description: Mac终端zsh忽略大小写 
 cover: /images/MacOS.jpg
-top_img: /images/MacOS.jpg
-typora-root-url: ../../../source
 ---
 
 Mac 终端默认是大小写不敏感的，cd desktop 其实也能切到桌面，但是无法通过tab补全。
