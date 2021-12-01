@@ -1,10 +1,5 @@
 ---
 title: Swift第三方库
-date: 2020-11-01
-updated: 2020-11-01 
-tags: 
-  - Swift
-  - iOS
 categories: iOS
 description: iOS Swift 第三方开源库总结
 cover: /images/swift.jpg

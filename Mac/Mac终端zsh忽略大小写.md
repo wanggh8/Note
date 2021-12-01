@@ -2,8 +2,6 @@
 title: Mac终端zsh忽略大小写 
 date: 2021-05-25
 updated: 2021-05-25
-tags: 
-  - Mac
 categories: Mac
 description: Mac终端zsh忽略大小写 
 cover: /images/MacOS.jpg
