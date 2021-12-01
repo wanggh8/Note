@@ -1,6 +1,9 @@
 # Summary
 
 * [Introduction](README.md)
+
+# Apple Develop
+
 * [Foundation](Foundation/README.md)
 	* [GCD多线程](Foundation/GCD多线程.md)
 * [Swift](Swift/README.md)
@@ -10,11 +13,16 @@
 * [macOS](macOS/README.md)
     * [App Sandbox](macOS/App-Sandbox.md)
     * [NSViewController](macOS/NSViewController.md)
-* [Git](Git/README.md)
-    * [Git Manual](Git/Git-Manual.md)
-    * [Git LFS](Git/Git-LFS.md)
+
+## Mac 
+
 * [Mac](Mac/README.md)
     * [Mac终端zsh忽略大小写](Mac/Mac终端zsh忽略大小写.md)
     * [Mac键盘快捷键](Mac/Mac键盘快捷键.md)   
     * [Mac开源软件](Mac/Mac开源软件.md) 
     * [Mac zsh](Mac/zsh.md) 
+    * [Homebrew](Mac/Homebrew.md) 
+
+* [Git](Git/README.md)
+    * [Git Manual](Git/Git-Manual.md)
+    * [Git LFS](Git/Git-LFS.md)
