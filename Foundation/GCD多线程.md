@@ -7,7 +7,7 @@ typora-root-url: ../../../source
 
 # GCD 多线程
 
-
+Grand Central Dispatch
 
 ## Dispatch Queue
 
@@ -48,22 +48,26 @@ Global Dispatch Queue 是所有应用程序都能使用的 Concurrent Dispatch Q
 
 ### dispatch_after
 
-
-
-## Dispatch Group
-
 ### dispatch_async
-
-### 
 
 ### dispatch_sync
 
-
-
 ### dispatch_barrier_async
 
+### dispatch_barrier_sync
 
+### dispatch_apply
 
-#### dispatch_barrier_sync
+### dispatch_suspend
+
+### dispatch_resume
+
+### dispatch_once
+
+### Dispatch Semaphore
+
+## Dispatch Group
+
+## Dispatch I/O
 
 ### 

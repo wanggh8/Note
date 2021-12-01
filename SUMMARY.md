@@ -1,5 +1,3 @@
-# Summary
-
 * [Introduction](README.md)
 * [Foundation](Foundation/README.md)
 	* [GCD多线程](Foundation/GCD多线程.md)
