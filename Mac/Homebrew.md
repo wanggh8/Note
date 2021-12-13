@@ -6,6 +6,17 @@ cover: /images/MacOS.jpg
 ---
 
 # Homebrew
+Homebrew 是一款自由及开放源代码的软件包管理系统，用以简化 macOS 和 linux 系统上的软件安装过程。它拥有安装、卸载、更新、查看、搜索等很多实用的功能，通过简单的一条指令，就可以实现包管理，十分方便快捷。
+
+Homebrew 主要有四个部分组成:
+| 名称             | 备注                            |
+|------------------|---------------------------------|
+| brew             | Homebrew 源代码仓库             |
+| homebrew-core    | Homebrew 核心软件仓库           |
+| homebrew-bottles | Homebrew 预编译二进制软件包     |
+| homebrew-cask    | 提供 macOS 应用和大型二进制文件 |
+
+
 
 ## 安装卸载软件
 
@@ -73,4 +84,141 @@ homebrew 在升级软件时候不会清理相关的旧版本，在软件升级�
 - brew unistall <fromula> --force 彻底卸载指定软件，包括旧版本
 
 通过brew安装的文件会自动设置环境变量，所以不用担心命令行不能启动的问题。
+
+## 源管理
+
+### 查看源
+
+查看 brew.git 当前源
+
+```shell
+cd "$(brew --repo)" && git remote -v
+```
+
+查看 homebrew-core.git 当前源
+
+```shell
+cd "$(brew --repo homebrew/core)" && git remote -v
+```
+
+### 替换为清华源
+
+#### 替换 brew.git 源
+```shell
+git -C "$(brew --repo)" remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git
+```
+
+#### 替换 homebrew-core.git 源
+```shell
+git -C "$(brew --repo homebrew/core)" remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git
+```
+
+#### 替换 homebrew-cask.git 源
+```shell
+git -C "$(brew --repo homebrew/cask)" remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-cask.git
+```
+
+#### zsh 替换 brew bintray 镜像
+```shell
+echo 'export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles' >> ~/.zshrc
+```
+更新配置
+```shell
+source ~/.zshrc
+```
+
+#### bash 替换 brew bintray 镜像
+```shell
+echo 'export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles' >> ~/.bash_profile
+```
+更新配置
+```shell
+source ~/.bash_profile
+```
+
+#### 刷新源
+```shell
+brew update
+```
+
+### 替换为阿里源
+
+#### 替换 brew.git 源
+```shell
+git -C "$(brew --repo)" remote set-url origin https://mirrors.aliyun.com/homebrew/brew.git
+```
+
+#### 替换 homebrew-core.git 源
+```shell
+git -C "$(brew --repo homebrew/core)" remote set-url origin https://mirrors.aliyun.com/homebrew/homebrew-core.git
+```
+
+#### 替换 homebrew-cask.git 源
+```shell
+git -C "$(brew --repo homebrew/cask)" remote set-url origin https://mirrors.aliyun.com/homebrew/homebrew-cask.git
+```
+
+#### zsh 替换 brew bintray 镜像
+```shell
+echo 'export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.aliyun.com/homebrew/homebrew-bottles' >> ~/.zshrc
+```
+更新配置
+```shell
+source ~/.zshrc
+```
+
+#### bash 替换 brew bintray 镜像
+```shell
+echo 'export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.aliyun.com/homebrew/homebrew-bottles' >> ~/.bash_profile
+```
+更新配置
+```shell
+source ~/.bash_profile
+```
+
+#### 刷新源
+```shell
+brew update
+```
+
+### 重置为官方源
+
+#### 重置 brew.git 源
+```shell
+git -C "$(brew --repo)" remote set-url origin https://github.com/Homebrew/brew.git
+```
+
+#### 重置 homebrew-core.git 源
+```shell
+git -C "$(brew --repo homebrew/core)" remote set-url origin https://github.com/Homebrew/homebrew-core.git
+```
+
+#### 替换 homebrew-cask.git 源
+```shell
+git -C "$(brew --repo homebrew/cask)" remote set-url origin https://github.com/Homebrew/homebrew-cask.git
+```
+
+#### zsh 注释掉 HOMEBREW_BOTTLE_DOMAIN 配置
+```shell
+vi ~/.zshrc
+```
+更新配置
+```shell
+source ~/.zshrc
+```
+
+#### bash 注释掉 HOMEBREW_BOTTLE_DOMAIN 配置
+```shell
+vi ~/.bash_profile
+```
+更新配置
+```shell
+source ~/.bash_profile
+```
+
+#### 刷新源
+```shell
+brew update
+```
+
 
