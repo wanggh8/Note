@@ -1,6 +1,6 @@
 ---
 title: Objective-C Tips
-categories: iOS
+categories: Objective-C
 description: Objective-C Tips
 ---
 

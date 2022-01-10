@@ -2,7 +2,6 @@
 title: Git LFS 
 categories: Git
 description: Git LFS
-typora-root-url: ../
 ---
 
 # Git LFS

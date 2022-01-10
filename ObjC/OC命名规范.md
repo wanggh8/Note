@@ -1,6 +1,6 @@
 ---
 title: Objective-C 命名规范
-categories: iOS
+categories: Objective-C
 description: iOS Objective-C 命名规范 
 ---
 

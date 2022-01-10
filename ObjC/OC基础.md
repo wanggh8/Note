@@ -1,7 +1,7 @@
 ---
 title: Objective-C 基础
-categories: iOS
-description: iOS Objective-C Manual
+categories: Objective-C
+description: Objective-C Manual
 ---
 
 # Objective-C 基础

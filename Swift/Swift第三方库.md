@@ -1,11 +1,10 @@
 ---
-title: Swift第三方库
-categories: iOS
-description: iOS Swift 第三方开源库总结
-cover: /images/swift.jpg
-top_img: /images/swift.jpg
-typora-root-url: ../../../source
+title: Swift 第三方库
+categories: Swift
+description: Swift 第三方开源库总结
 ---
+
+# Swift 第三方库
 
 ## Alamofire
 

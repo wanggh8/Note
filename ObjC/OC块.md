@@ -1,7 +1,7 @@
 ---
 title: Block 块
-categories: iOS
-description: iOS Objective-C Block 块
+categories: Objective-C
+description: Objective-C Block 块
 ---
 
 # Block 块

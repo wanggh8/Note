@@ -2,7 +2,6 @@
 title: Git Manual
 categories: Git
 description: Git Manual
-typora-root-url: ../
 ---
 
 # Git Manual

@@ -1,6 +1,6 @@
 ---
 title: Objective-C 内存管理
-categories: iOS
+categories: Objective-C
 description: Objective-C 内存管理相关
 ---
 
