@@ -1,8 +1,10 @@
 ---
-title: iOS Objective-C 面试知识整理
+title: Objective-C Tips
 categories: iOS
-description: iOS Objective-C Manual
+description: Objective-C Tips
 ---
+
+# Objective-C Tips
 
 ## Objective-C 基础
 

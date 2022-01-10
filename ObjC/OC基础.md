@@ -4,6 +4,8 @@ categories: iOS
 description: iOS Objective-C Manual
 ---
 
+# Objective-C 基础
+
 Object-C通常写作Objective-C或者Obj-C或OC，是根据C语言所衍生出来的语言，继承了C语言的特性，是扩充C的面向对象编程语言。它主要使用于Mac OS X和IOS系统。Objective-C是非常“实际”的语言。它使用一个用C写成、很小的运行库，只会令应用程序的大小增加很小。目前apple绝大多数采用的是Object-C。
 
 <!--more--> 
