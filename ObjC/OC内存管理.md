@@ -1,15 +1,7 @@
 ---
-title: iOS 内存管理
-date: 2021-04-19
-updated: 2021-04-20
-tags: 
-  - Objective-C
-  - iOS
+title: Objective-C 内存管理
 categories: iOS
-description: iOS 内存管理相关
-cover: /images/objective-C.png
-top_img: /images/objective-C-bg.png
-typora-root-url: ../../../source
+description: Objective-C 内存管理相关
 ---
 
 

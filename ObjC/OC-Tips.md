@@ -1,15 +1,7 @@
 ---
 title: iOS Objective-C 面试知识整理
-date: 2019-03-21
-updated: 2021-03-05 
-tags: 
-  - Objective-C
-  - iOS
 categories: iOS
 description: iOS Objective-C Manual
-cover: /images/objective-C.png
-top_img: /images/objective-C-bg.png
-typora-root-url: ../../../source
 ---
 
 ## Objective-C 基础

@@ -1,8 +1,8 @@
 ---
 title: AutoLayout 自动布局
-categories: Mac
+categories: Foundation
 description: Auto Layout是由苹果公司提供的一个用于动态计算UIView及其子类的大小和位置的库
-cover: /images/MacOS.jpg
+cover: /images/Xcode.png
 ---
 
 # AutoLayout 自动布局

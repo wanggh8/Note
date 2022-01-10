@@ -1,15 +1,7 @@
 ---
-title: iOS Block
-date: 2021-04-19
-updated: 2019-04-19
-tags: 
-  - Objective-C
-  - iOS
+title: Block 块
 categories: iOS
-description: iOS Objective-C Block
-cover: /images/objective-C.png
-top_img: /images/objective-C-bg.png
-typora-root-url: ../../../source
+description: iOS Objective-C Block 块
 ---
 
 ## 简介

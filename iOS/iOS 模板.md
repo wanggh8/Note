@@ -1,7 +1,7 @@
 ---
 title: iOS
-description: iOS 
-typora-root-url: ..
+categories: iOS 
+description: iOS
 ---
 
 

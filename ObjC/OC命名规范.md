@@ -1,15 +1,7 @@
 ---
-title: iOS Objective-C 命名规范
-date: 2021-05-27
-updated: 2021-05-28
-tags: 
-  - iOS
-  - Objective-C
+title: Objective-C 命名规范
 categories: iOS
 description: iOS Objective-C 命名规范 
-cover: /images/Xcode.png
-top_img: /images/Xcode.png
-typora-root-url: ../../../source
 ---
 
 - 项目命名规则
@@ -35,10 +27,6 @@ typora-root-url: ../../../source
 - - Models (数据模型)
 - - Views（视图文件）
 - - Controllers（控制器）。
-
-
-
-
 
 - 不要缩写事物的名称。将它们说清楚，即使它们很长：
 - 尝试在整个项目中使用一致名称。
