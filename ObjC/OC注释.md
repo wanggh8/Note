@@ -1,16 +1,10 @@
 ---
-title: iOS 注释
-date: 2021-04-23
-updated: 2019-04-23
-tags: 
-  - Objective-C
-  - iOS
-categories: iOS
-description: iOS 注释
-cover: /images/Xcode.png
-top_img: /images/Xcode.png
-typora-root-url: ../../../source
+title: Objective-C 注释
+categories: Objective-C
+description: Objective-C 注释
 ---
+
+# Objective-C 注释
 
 Xcode8提供了快速生成格式化注释的快捷键：option+command+/。如果方法有参数，会自动添加@param关键字，用于描述对应的参数。
 Apple提供了官方的headDoc语法，但是很多都已经在Xcode中失效了，而且有些关键字也和appleDoc不兼容。下面几种列举出了在Xcode中仍然有效的一些关键字：

@@ -1,11 +1,10 @@
 ---
-title: iOS PhotoKit
+title: PhotoKit
 categories: iOS
 description: iOS PhotoKit
-cover: /images/Xcode.png
 ---
 
-# iOS PhotoKit
+# PhotoKit
 
 iOS 14 请求用户相册权限分为读写权限和仅写权限：
 ```objc

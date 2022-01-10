@@ -1,25 +1,16 @@
 ---
-title: iOS Framework
-date: 2021-05-05
-updated: 2021-05-05
-tags: 
-  - iOS
-categories: iOS
-description: iOS Framework
-cover: /images/Xcode.png
-top_img: /images/Xcode.png
-typora-root-url: ../../../source
+title: Framework 相关
+categories: Foundation
+description: Framework 相关
 ---
 
-
+# Framework 相关
 
 ## 参考
 
 
 
 https://juejin.cn/post/6844903930439139336
-
-
 
 
 

@@ -1,20 +1,10 @@
 ---
-title: iOS 消息机制
-date: 2021-05-05
-updated: 2021-05-05
-tags: 
-  - Objective-C
-  - iOS
-categories: iOS
-description: iOS 多线程编程 GCD
-cover: /images/Xcode.png
-top_img: /images/Xcode.png
-typora-root-url: ../../../source
+title: Notificaiton 通知
+categories: Foundation
+description: Notificaiton 通知
 ---
 
-
-
-
+# Notificaiton 通知
 
 NSNotificaiton则是一对多注册一个通知
 

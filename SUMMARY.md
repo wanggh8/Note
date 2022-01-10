@@ -10,13 +10,14 @@
 
 * [Swift](Swift/README.md)
 	* [Swift第三方库](Swift/Swift第三方库.md) 
-	* [内存管理](Swift/内存管理.md) 
+	* [内存管理](Swift/Swift内存管理.md) 
 
 * [Objective-C](ObjC/README.md)
 	* [基础](ObjC/OC基础.md) 
 	* [块](ObjC/OC块.md) 	
 	* [内存管理](ObjC/OC内存管理.md) 	
 	* [命名规范](ObjC/OC命名规范.md) 
+	* [注释](ObjC/OC注释.md) 
 	* [Tips](ObjC/OC-Tips.md) 
 
 * [iOS](iOS/README.md)
