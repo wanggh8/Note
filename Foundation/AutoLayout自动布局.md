@@ -1,6 +1,6 @@
 # AutoLayout 自动布局
 
-Auto Layout 是由苹果公司提供的一个用于动态计算 UIView 及其子类的大小和位置的库
+
 
 ## 历史
 
@@ -61,9 +61,6 @@ Auto Layout 构建在 Cassowary 算法的基础之上，苹果公司在 iOS 6 �
 ### 注意事项
 
 1. `leadingAnchor` 与 `leftAnchor`、`trailingAnchor` 与 `rightAnchor` 不允许混用。在编译时不会出现任何问题，但是在运行时就会报错，并会导致程序 Crash
-
-2. 
-
 
 
 
