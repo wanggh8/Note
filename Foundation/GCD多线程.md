@@ -70,4 +70,8 @@ Global Dispatch Queue 是所有应用程序都能使用的 Concurrent Dispatch Q
 
 ## Dispatch I/O
 
-### 
+### 获取当前队列 Label
+
+```swift
+String(validatingUTF8: __dispatch_queue_get_label(nil))
+```

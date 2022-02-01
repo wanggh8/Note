@@ -22,3 +22,7 @@ typora-root-url: ../../../source
 - `LOCK.tryLock()`: 该处不会等待，获取不到锁并直接返回false，去执行下面的逻辑。
 - `LOCK.tryLock(10, TimeUnit.SECONDS)`：该处会在10秒时间内处于等待中，但当调用`B.interrupt()`会被中断等待，并抛出`InterruptedException`。10秒时间内如果线程A释放锁，会获取到锁并返回true，否则10秒过后会获取不到锁并返回false，去执行下面的逻辑。
 
+
+## 参考
+
+https://juejin.cn/post/6892322602602201102#heading-3

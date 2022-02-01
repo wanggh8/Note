@@ -22,6 +22,7 @@
 
 * [iOS](iOS/README.md)
 	* [In-App-Purchase](iOS/内购.md)
+	* [后台下载](iOS/后台下载.md)
 
 * [macOS](macOS/README.md)
     * [App Sandbox](macOS/App-Sandbox.md)
