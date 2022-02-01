@@ -1,10 +1,8 @@
 # AutoLayout 自动布局
 
+Auto Layout 是由苹果公司提供的一个用于动态计算 UIView 及其子类的大小和位置的库。
 
-
-## 历史
-
-Auto Layout 构建在 Cassowary 算法的基础之上，苹果公司在 iOS 6 系统时引入了 Auto Layout，在 iOS 9 发布时，苹果推出了更简洁语法的 [NSLayoutAnchor](https://developer.apple.com/documentation/uikit/nslayoutanchor)。iOS 12 大幅度提升 Auto Layout 性能，使滑动屏幕时达到满帧
+Auto Layout 构建在 Cassowary 算法的基础之上，苹果公司在 iOS 6 系统时引入了 Auto Layout，在 iOS 9 发布时，苹果推出了更简洁语法的 [NSLayoutAnchor](https://developer.apple.com/documentation/uikit/nslayoutanchor)。iOS 12 大幅度提升 Auto Layout 性能，使滑动屏幕时达到满帧。
 
 ## NSLayoutConstraint
 
