@@ -1,17 +1,10 @@
 ---
 title: iOS Objective-C UI
-date: 2019-03-27:31:12
-updated: 2019-03-27 16:23:34
-tags: 
-  - Objective-C
-  - iOS
-  - UI
 categories: iOS
 description: iOS Objective-C UI
-cover: /images/objective-C.png
-top_img: /images/objective-C-bg.png
-typora-root-url: ../../../source
 ---
+
+# iOS Objective-C UI
 
 ## 常用控件
 

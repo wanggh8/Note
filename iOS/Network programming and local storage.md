@@ -1,17 +1,10 @@
 ---
 title: 网络编程与本地存储
-date: 2019-03-27:31:12
-updated: 2019-03-27 16:23:34
-tags: 
-  - Objective-C
-  - iOS
-  - 网络编程
 categories: iOS
 description: iOS 网络编程与本地存储
-cover: /images/objective-C.png
-top_img: /images/objective-C-bg.png
-typora-root-url: ../../../source
 ---
+
+# 网络编程与本地存储
 
 ## 网络编程
 
