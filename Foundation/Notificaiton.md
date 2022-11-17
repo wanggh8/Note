@@ -26,3 +26,18 @@ iOS消息通知机制算是同步的，观察者只要向消息中心注册， �
 
 第一个参数是观察者为本身，第二个参数表示消息回调的方法，第三个消息通知的名字，第四个为nil表示表示接受所有发送者的消息~
 
+### 内存管理
+
+```objc
+NSNotificationCenter * __weak center = [NSNotificationCenter defaultCenter];
+id __block token = [center addObserverForName:@"OneTimeNotification"
+                                       object:nil
+                                        queue:[NSOperationQueue mainQueue]
+                                   usingBlock:^(NSNotification *note) {
+                                       NSLog(@"Received the notification!");
+                                       [center removeObserver:token];
+                                       token = nil;
+                                   }];
+```
+
+方法 `addObserverForName:object:queue:usingBlock:` 的返回值会被 `Notification center` 强引用。此外 `__block` 的变量会在 Block 拷贝到堆时，同时拷贝到堆。Block 内部使用返回值后，应主动设置为 nil，避免出现内存泄漏

@@ -73,7 +73,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../Swift/" />
+    <link rel="next" href="AppThinning.html" />
     
     
     <link rel="prev" href="GCD多线程.html" />
@@ -158,6 +158,19 @@
             
                     
                     AutoLayout自动布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="AppThinning.html">
+            
+                <a href="AppThinning.html">
+            
+                    
+                    App Thinning
             
                 </a>
             
@@ -462,9 +475,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.4" data-path="../Mac/zsh.html">
+        <li class="chapter " data-level="3.1.4" data-path="../Mac/zsh.md">
             
-                <a href="../Mac/zsh.html">
+                <span>
             
                     
                     Mac zsh
@@ -586,13 +599,13 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#autolayout-&#x81EA;&#x52A8;&#x5E03;&#x5C40;"><b> </b>AutoLayout &#x81EA;&#x52A8;&#x5E03;&#x5C40;</a></li><ul><li><span class="title-icon "></span><a href="#nslayoutconstraint"><b>1. </b>NSLayoutConstraint</a></li><li><span class="title-icon "></span><a href="#nslayoutanchor"><b>2. </b>NSLayoutAnchor</a></li><ul><li><span class="title-icon "></span><a href="#&#x5E38;&#x7528;&#x5C5E;&#x6027;"><b>2.1. </b>&#x5E38;&#x7528;&#x5C5E;&#x6027;</a></li><li><span class="title-icon "></span><a href="#&#x66F4;&#x65B0;&#x7EA6;&#x675F;"><b>2.2. </b>&#x66F4;&#x65B0;&#x7EA6;&#x675F;</a></li><li><span class="title-icon "></span><a href="#&#x4F7F;&#x7528;&#x6B65;&#x9AA4;"><b>2.3. </b>&#x4F7F;&#x7528;&#x6B65;&#x9AA4;</a></li><li><span class="title-icon "></span><a href="#&#x6CE8;&#x610F;&#x4E8B;&#x9879;"><b>2.4. </b>&#x6CE8;&#x610F;&#x4E8B;&#x9879;</a></li><li><span class="title-icon "></span><a href="#&#x4F7F;&#x7528;&#x793A;&#x4F8B;"><b>2.5. </b>&#x4F7F;&#x7528;&#x793A;&#x4F8B;</a></li></ul><li><span class="title-icon "></span><a href="#auto-layout-&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;"><b>3. </b>Auto Layout &#x7684;&#x751F;&#x547D;&#x5468;&#x671F;</a></li></ul></ul></div><a href="#autolayout-&#x81EA;&#x52A8;&#x5E03;&#x5C40;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="autolayout-&#x81EA;&#x52A8;&#x5E03;&#x5C40;"><a name="autolayout-&#x81EA;&#x52A8;&#x5E03;&#x5C40;" class="anchor-navigation-ex-anchor" href="#autolayout-&#x81EA;&#x52A8;&#x5E03;&#x5C40;"><i class="fa fa-link" aria-hidden="true"></i></a> AutoLayout &#x81EA;&#x52A8;&#x5E03;&#x5C40;</h1>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#autolayout-&#x81EA;&#x52A8;&#x5E03;&#x5C40;"><b>1. </b>AutoLayout &#x81EA;&#x52A8;&#x5E03;&#x5C40;</a></li><ul><li><span class="title-icon "></span><a href="#nslayoutconstraint"><b>1.1. </b>NSLayoutConstraint</a></li><li><span class="title-icon "></span><a href="#nslayoutanchor"><b>1.2. </b>NSLayoutAnchor</a></li><ul><li><span class="title-icon "></span><a href="#&#x5E38;&#x7528;&#x5C5E;&#x6027;"><b>1.2.1. </b>&#x5E38;&#x7528;&#x5C5E;&#x6027;</a></li><li><span class="title-icon "></span><a href="#&#x66F4;&#x65B0;&#x7EA6;&#x675F;"><b>1.2.2. </b>&#x66F4;&#x65B0;&#x7EA6;&#x675F;</a></li><li><span class="title-icon "></span><a href="#&#x4F7F;&#x7528;&#x6B65;&#x9AA4;"><b>1.2.3. </b>&#x4F7F;&#x7528;&#x6B65;&#x9AA4;</a></li><li><span class="title-icon "></span><a href="#&#x6CE8;&#x610F;&#x4E8B;&#x9879;"><b>1.2.4. </b>&#x6CE8;&#x610F;&#x4E8B;&#x9879;</a></li><li><span class="title-icon "></span><a href="#&#x4F7F;&#x7528;&#x793A;&#x4F8B;"><b>1.2.5. </b>&#x4F7F;&#x7528;&#x793A;&#x4F8B;</a></li></ul><li><span class="title-icon "></span><a href="#auto-layout-&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;"><b>1.3. </b>Auto Layout &#x7684;&#x751F;&#x547D;&#x5468;&#x671F;</a></li></ul></ul></div><a href="#autolayout-&#x81EA;&#x52A8;&#x5E03;&#x5C40;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="autolayout-&#x81EA;&#x52A8;&#x5E03;&#x5C40;"><a name="autolayout-&#x81EA;&#x52A8;&#x5E03;&#x5C40;" class="anchor-navigation-ex-anchor" href="#autolayout-&#x81EA;&#x52A8;&#x5E03;&#x5C40;"><i class="fa fa-link" aria-hidden="true"></i></a>1. AutoLayout &#x81EA;&#x52A8;&#x5E03;&#x5C40;</h1>
 <p>Auto Layout &#x662F;&#x7531;&#x82F9;&#x679C;&#x516C;&#x53F8;&#x63D0;&#x4F9B;&#x7684;&#x4E00;&#x4E2A;&#x7528;&#x4E8E;&#x52A8;&#x6001;&#x8BA1;&#x7B97; UIView &#x53CA;&#x5176;&#x5B50;&#x7C7B;&#x7684;&#x5927;&#x5C0F;&#x548C;&#x4F4D;&#x7F6E;&#x7684;&#x5E93;&#x3002;</p>
 <p>Auto Layout &#x6784;&#x5EFA;&#x5728; Cassowary &#x7B97;&#x6CD5;&#x7684;&#x57FA;&#x7840;&#x4E4B;&#x4E0A;&#xFF0C;&#x82F9;&#x679C;&#x516C;&#x53F8;&#x5728; iOS 6 &#x7CFB;&#x7EDF;&#x65F6;&#x5F15;&#x5165;&#x4E86; Auto Layout&#xFF0C;&#x5728; iOS 9 &#x53D1;&#x5E03;&#x65F6;&#xFF0C;&#x82F9;&#x679C;&#x63A8;&#x51FA;&#x4E86;&#x66F4;&#x7B80;&#x6D01;&#x8BED;&#x6CD5;&#x7684; <a href="https://developer.apple.com/documentation/uikit/nslayoutanchor" target="_blank">NSLayoutAnchor</a>&#x3002;iOS 12 &#x5927;&#x5E45;&#x5EA6;&#x63D0;&#x5347; Auto Layout &#x6027;&#x80FD;&#xFF0C;&#x4F7F;&#x6ED1;&#x52A8;&#x5C4F;&#x5E55;&#x65F6;&#x8FBE;&#x5230;&#x6EE1;&#x5E27;&#x3002;</p>
-<h2 id="nslayoutconstraint"><a name="nslayoutconstraint" class="anchor-navigation-ex-anchor" href="#nslayoutconstraint"><i class="fa fa-link" aria-hidden="true"></i></a>1. NSLayoutConstraint</h2>
+<h2 id="nslayoutconstraint"><a name="nslayoutconstraint" class="anchor-navigation-ex-anchor" href="#nslayoutconstraint"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. NSLayoutConstraint</h2>
 <p>&#x6B65;&#x9AA4;&#x548C;&#x4EE3;&#x7801;&#x7E41;&#x6742;&#xFF0C;&#x9664;&#x975E;&#x517C;&#x5BB9; iOS 9 &#x4EE5;&#x4E0B;&#xFF0C;&#x5426;&#x5219;&#x4E0D;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;&#x3002;</p>
-<h2 id="nslayoutanchor"><a name="nslayoutanchor" class="anchor-navigation-ex-anchor" href="#nslayoutanchor"><i class="fa fa-link" aria-hidden="true"></i></a>2. NSLayoutAnchor</h2>
-<h3 id="&#x5E38;&#x7528;&#x5C5E;&#x6027;"><a name="&#x5E38;&#x7528;&#x5C5E;&#x6027;" class="anchor-navigation-ex-anchor" href="#&#x5E38;&#x7528;&#x5C5E;&#x6027;"><i class="fa fa-link" aria-hidden="true"></i></a>2.1. &#x5E38;&#x7528;&#x5C5E;&#x6027;</h3>
+<h2 id="nslayoutanchor"><a name="nslayoutanchor" class="anchor-navigation-ex-anchor" href="#nslayoutanchor"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. NSLayoutAnchor</h2>
+<h3 id="&#x5E38;&#x7528;&#x5C5E;&#x6027;"><a name="&#x5E38;&#x7528;&#x5C5E;&#x6027;" class="anchor-navigation-ex-anchor" href="#&#x5E38;&#x7528;&#x5C5E;&#x6027;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1. &#x5E38;&#x7528;&#x5C5E;&#x6027;</h3>
 <ul>
 <li>leadingAnchor</li>
 <li>trailingAnchor</li>
@@ -608,7 +621,7 @@
 <li>lastBaselineAnchor</li>
 </ul>
 <p>&#x53C2;&#x8003; <a href="https://developer.apple.com/documentation/uikit/nslayoutanchor" target="_blank">Apple Developer NSLayoutAnchor</a></p>
-<h3 id="&#x66F4;&#x65B0;&#x7EA6;&#x675F;"><a name="&#x66F4;&#x65B0;&#x7EA6;&#x675F;" class="anchor-navigation-ex-anchor" href="#&#x66F4;&#x65B0;&#x7EA6;&#x675F;"><i class="fa fa-link" aria-hidden="true"></i></a>2.2. &#x66F4;&#x65B0;&#x7EA6;&#x675F;</h3>
+<h3 id="&#x66F4;&#x65B0;&#x7EA6;&#x675F;"><a name="&#x66F4;&#x65B0;&#x7EA6;&#x675F;" class="anchor-navigation-ex-anchor" href="#&#x66F4;&#x65B0;&#x7EA6;&#x675F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.2. &#x66F4;&#x65B0;&#x7EA6;&#x675F;</h3>
 <ul>
 <li><p>setNeedsLayout: &#x544A;&#x77E5;&#x9875;&#x9762;&#x9700;&#x8981;&#x66F4;&#x65B0;&#xFF0C;&#x4F46;&#x662F;&#x4E0D;&#x4F1A;&#x7ACB;&#x523B;&#x5F00;&#x59CB;&#x66F4;&#x65B0;&#x3002;&#x6267;&#x884C;&#x540E;&#x4F1A;&#x7ACB;&#x523B;&#x8C03;&#x7528; layoutSubviews&#x3002;</p>
 </li>
@@ -623,7 +636,7 @@
 <li><p>updateConstraints: &#x66F4;&#x65B0; View &#x7EA6;&#x675F;</p>
 </li>
 </ul>
-<h3 id="&#x4F7F;&#x7528;&#x6B65;&#x9AA4;"><a name="&#x4F7F;&#x7528;&#x6B65;&#x9AA4;" class="anchor-navigation-ex-anchor" href="#&#x4F7F;&#x7528;&#x6B65;&#x9AA4;"><i class="fa fa-link" aria-hidden="true"></i></a>2.3. &#x4F7F;&#x7528;&#x6B65;&#x9AA4;</h3>
+<h3 id="&#x4F7F;&#x7528;&#x6B65;&#x9AA4;"><a name="&#x4F7F;&#x7528;&#x6B65;&#x9AA4;" class="anchor-navigation-ex-anchor" href="#&#x4F7F;&#x7528;&#x6B65;&#x9AA4;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.3. &#x4F7F;&#x7528;&#x6B65;&#x9AA4;</h3>
 <ol>
 <li><p>&#x5728;&#x4F7F;&#x7528; <code>NSLayoutAnchor</code> &#x4E3A;&#x89C6;&#x56FE;&#x6DFB;&#x52A0;&#x7EA6;&#x675F;&#x65F6;&#x4E00;&#x5B9A;&#x8981;&#x5148;&#x628A; <code>translatesAutoresizingMaskIntoConstraints</code> &#x8BBE;&#x7F6E; false</p>
 </li>
@@ -636,22 +649,22 @@
 <ol>
 <li>&#x8BBE;&#x7F6E;&#x5BBD;&#x9AD8;&#x6BD4;&#xFF0C;&#x8BBE;&#x7F6E; multiplier &#x4E3A;&#x76F8;&#x5E94;&#x6BD4;&#x4F8B;</li>
 </ol>
-<h3 id="&#x6CE8;&#x610F;&#x4E8B;&#x9879;"><a name="&#x6CE8;&#x610F;&#x4E8B;&#x9879;" class="anchor-navigation-ex-anchor" href="#&#x6CE8;&#x610F;&#x4E8B;&#x9879;"><i class="fa fa-link" aria-hidden="true"></i></a>2.4. &#x6CE8;&#x610F;&#x4E8B;&#x9879;</h3>
+<h3 id="&#x6CE8;&#x610F;&#x4E8B;&#x9879;"><a name="&#x6CE8;&#x610F;&#x4E8B;&#x9879;" class="anchor-navigation-ex-anchor" href="#&#x6CE8;&#x610F;&#x4E8B;&#x9879;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.4. &#x6CE8;&#x610F;&#x4E8B;&#x9879;</h3>
 <ol>
 <li><code>leadingAnchor</code> &#x4E0E; <code>leftAnchor</code>&#x3001;<code>trailingAnchor</code> &#x4E0E; <code>rightAnchor</code> &#x4E0D;&#x5141;&#x8BB8;&#x6DF7;&#x7528;&#x3002;&#x5728;&#x7F16;&#x8BD1;&#x65F6;&#x4E0D;&#x4F1A;&#x51FA;&#x73B0;&#x4EFB;&#x4F55;&#x95EE;&#x9898;&#xFF0C;&#x4F46;&#x662F;&#x5728;&#x8FD0;&#x884C;&#x65F6;&#x5C31;&#x4F1A;&#x62A5;&#x9519;&#xFF0C;&#x5E76;&#x4F1A;&#x5BFC;&#x81F4;&#x7A0B;&#x5E8F; Crash</li>
 </ol>
-<h3 id="&#x4F7F;&#x7528;&#x793A;&#x4F8B;"><a name="&#x4F7F;&#x7528;&#x793A;&#x4F8B;" class="anchor-navigation-ex-anchor" href="#&#x4F7F;&#x7528;&#x793A;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>2.5. &#x4F7F;&#x7528;&#x793A;&#x4F8B;</h3>
-<pre><code class="lang-Objective-C">UIView *parentView = [[UIView alloc] init];
-UIView *childView = [[UIView alloc] init];
+<h3 id="&#x4F7F;&#x7528;&#x793A;&#x4F8B;"><a name="&#x4F7F;&#x7528;&#x793A;&#x4F8B;" class="anchor-navigation-ex-anchor" href="#&#x4F7F;&#x7528;&#x793A;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.5. &#x4F7F;&#x7528;&#x793A;&#x4F8B;</h3>
+<pre><code class="lang-objc"><span class="hljs-built_in">UIView</span> *parentView = [[<span class="hljs-built_in">UIView</span> alloc] init];
+<span class="hljs-built_in">UIView</span> *childView = [[<span class="hljs-built_in">UIView</span> alloc] init];
 [parentView addSubview:childView];
 
-childView.translatesAutoresizingMaskIntoConstraints = NO;
-[childView.centerXAnchor constraintEqualToAnchor:parentView.centerXAnchor].active = YES;
-[childView.centerYAnchor constraintEqualToAnchor:parentView.centerYAnchor].active = YES;
-[childView.widthAnchor constraintEqualToConstant:100].active = YES;
-[childView.heightAnchor constraintEqualToConstant:100].active = YES;
+childView.translatesAutoresizingMaskIntoConstraints = <span class="hljs-literal">NO</span>;
+[childView.centerXAnchor constraintEqualToAnchor:parentView.centerXAnchor].active = <span class="hljs-literal">YES</span>;
+[childView.centerYAnchor constraintEqualToAnchor:parentView.centerYAnchor].active = <span class="hljs-literal">YES</span>;
+[childView.widthAnchor constraintEqualToConstant:<span class="hljs-number">100</span>].active = <span class="hljs-literal">YES</span>;
+[childView.heightAnchor constraintEqualToConstant:<span class="hljs-number">100</span>].active = <span class="hljs-literal">YES</span>;
 </code></pre>
-<h2 id="auto-layout-&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;"><a name="auto-layout-&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;" class="anchor-navigation-ex-anchor" href="#auto-layout-&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;"><i class="fa fa-link" aria-hidden="true"></i></a>3. Auto Layout &#x7684;&#x751F;&#x547D;&#x5468;&#x671F;</h2>
+<h2 id="auto-layout-&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;"><a name="auto-layout-&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;" class="anchor-navigation-ex-anchor" href="#auto-layout-&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. Auto Layout &#x7684;&#x751F;&#x547D;&#x5468;&#x671F;</h2>
 <p>&#x82F9;&#x679C;&#x7684; Auto Layout &#x662F;&#x57FA;&#x4E8E; Cassowary &#x7B97;&#x6CD5;&#x7684;&#xFF0C;&#x82F9;&#x679C;&#x5728;&#x6B64;&#x57FA;&#x7840;&#x4E0A;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x5957; Layout Engine &#x5F15;&#x64CE;&#xFF0C;&#x7531;&#x5B83;&#x6765;&#x7BA1;&#x7406;&#x9875;&#x9762;&#x7684;&#x5E03;&#x5C40;&#xFF0C;&#x6765;&#x5B8C;&#x6210;&#x521B;&#x5EFA;&#x3001;&#x66F4;&#x65B0;&#x3001;&#x9500;&#x6BC1;&#x7B49;&#x3002;</p>
 <p>&#x5728; APP &#x542F;&#x52A8;&#x540E;&#xFF0C;&#x4F1A;&#x5F00;&#x542F;&#x4E00;&#x4E2A;&#x5E38;&#x9A7B;&#x7EBF;&#x7A0B;&#x6765;&#x76D1;&#x542C;&#x7EA6;&#x675F;&#x53D8;&#x5316;&#xFF0C;&#x5F53;&#x7EA6;&#x675F;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x540E;&#x4F1A;&#x51FA;&#x53D1; Deffered Layout Pass(&#x5EF6;&#x8FDF;&#x5E03;&#x5C40;&#x4F20;&#x9012;)&#xFF0C;&#x5728;&#x91CC;&#x9762;&#x505A;&#x5BB9;&#x9519;&#x5904;&#x7406;&#xFF08;&#x5982;&#x6709;&#x4E9B;&#x89C6;&#x56FE;&#x5728;&#x66F4;&#x65B0;&#x7EA6;&#x675F;&#x65F6;&#x6CA1;&#x6709;&#x786E;&#x5B9A;&#x6216;&#x7F3A;&#x5931;&#x5E03;&#x5C40;&#x7533;&#x660E;&#xFF09;&#xFF0C;&#x5B8C;&#x6210;&#x540E;&#x8FDB;&#x5165;&#x7EA6;&#x675F;&#x76D1;&#x542C;&#x53D8;&#x5316;&#x7684;&#x72B6;&#x6001;&#x3002;</p>
 <p>&#x5F53;&#x4E0B;&#x4E00;&#x6B21;&#x5237;&#x65B0;&#x89C6;&#x56FE;&#xFF08;&#x5982;&#x8C03;&#x7528; layoutIfNeeded()&#xFF09;&#x65F6;&#xFF0C;Layout Engine &#x4F1A;&#x4ECE;&#x4E0A;&#x5230;&#x4E0B;&#x8C03;&#x7528; layoutSubviews()&#xFF0C;&#x7136;&#x540E;&#x901A;&#x8FC7; Cassowary &#x7B97;&#x6CD5;&#x8BA1;&#x7B97;&#x5404;&#x4E2A;&#x5B50;&#x89C6;&#x56FE;&#x7684;&#x5927;&#x5C0F;&#x548C;&#x4F4D;&#x7F6E;&#xFF0C;&#x7B97;&#x51FA;&#x6765;&#x540E;&#x5C06;&#x5B50;&#x89C6;&#x56FE;&#x7684; frame &#x4ECE; layout Engine &#x91CC;&#x62F7;&#x8D1D;&#x51FA;&#x6765;&#xFF0C;&#x5728;&#x4E4B;&#x540E;&#x7684;&#x5904;&#x7406;&#x5C31;&#x548C;&#x624B;&#x5199; frame &#x7684;&#x7ED8;&#x5236;&#x3001;&#x6E32;&#x67D3;&#x7684;&#x8FC7;&#x7A0B;&#x4E00;&#x6837;&#x4E86;&#x3002;&#x4F7F;&#x7528; Auto Layout &#x548C;&#x624B;&#x5199; frame &#x591A;&#x7684;&#x5DE5;&#x4F5C;&#x5C31;&#x5728;&#x5E03;&#x5C40;&#x8BA1;&#x7B97;&#x4E0A;&#x3002;</p>
@@ -703,7 +716,7 @@ childView.translatesAutoresizingMaskIntoConstraints = NO;
                 </a>
                 
                 
-                <a href="../Swift/" class="navigation navigation-next " aria-label="Next page: Swift">
+                <a href="AppThinning.html" class="navigation navigation-next " aria-label="Next page: App Thinning">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -714,7 +727,7 @@ childView.translatesAutoresizingMaskIntoConstraints = NO;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"AutoLayout自动布局","level":"2.1.2","depth":2,"next":{"title":"Swift","level":"2.2","depth":1,"path":"Swift/README.md","ref":"Swift/README.md","articles":[{"title":"Swift第三方库","level":"2.2.1","depth":2,"path":"Swift/Swift第三方库.md","ref":"Swift/Swift第三方库.md","articles":[]},{"title":"内存管理","level":"2.2.2","depth":2,"path":"Swift/Swift内存管理.md","ref":"Swift/Swift内存管理.md","articles":[]}]},"previous":{"title":"GCD多线程","level":"2.1.1","depth":2,"path":"Foundation/GCD多线程.md","ref":"Foundation/GCD多线程.md","articles":[]},"dir":"ltr"},"config":{"plugins":["code","alerts","anchor-navigation-ex","search-plus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"alerts":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Note","gitbook":"*"},"file":{"path":"Foundation/AutoLayout自动布局.md","mtime":"2022-02-02T07:09:29.248Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-02T07:10:14.739Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"AutoLayout自动布局","level":"2.1.2","depth":2,"next":{"title":"App Thinning","level":"2.1.3","depth":2,"path":"Foundation/AppThinning.md","ref":"Foundation/AppThinning.md","articles":[]},"previous":{"title":"GCD多线程","level":"2.1.1","depth":2,"path":"Foundation/GCD多线程.md","ref":"Foundation/GCD多线程.md","articles":[]},"dir":"ltr"},"config":{"plugins":["code","alerts","anchor-navigation-ex","search-plus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"showLevel":true,"showGoTop":true,"printLog":false,"multipleH":false,"multipleH1":true,"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false}},"alerts":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Note","gitbook":"*"},"file":{"path":"Foundation/AutoLayout自动布局.md","mtime":"2022-11-17T09:19:54.537Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-11-17T09:20:44.757Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

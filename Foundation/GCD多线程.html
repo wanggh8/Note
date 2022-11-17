@@ -6,7 +6,7 @@
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <title>GCD多线程 · Note</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="description" content="GCD 多线程">
+        <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
         
         
@@ -158,6 +158,19 @@
             
                     
                     AutoLayout自动布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="AppThinning.html">
+            
+                <a href="AppThinning.html">
+            
+                    
+                    App Thinning
             
                 </a>
             
@@ -462,9 +475,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.4" data-path="../Mac/zsh.html">
+        <li class="chapter " data-level="3.1.4" data-path="../Mac/zsh.md">
             
-                <a href="../Mac/zsh.html">
+                <span>
             
                     
                     Mac zsh
@@ -586,9 +599,9 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#gcd-&#x591A;&#x7EBF;&#x7A0B;"><b> </b>GCD &#x591A;&#x7EBF;&#x7A0B;</a></li><ul><li><span class="title-icon "></span><a href="#dispatch-queue"><b>1. </b>Dispatch Queue</a></li><ul><li><span class="title-icon "></span><a href="#dispatchqueuecreate"><b>1.1. </b>dispatch_queue_create</a></li><li><span class="title-icon "></span><a href="#main-dispatch-queue"><b>1.2. </b>Main Dispatch Queue</a></li><li><span class="title-icon "></span><a href="#global-dispatch-queue"><b>1.3. </b>Global Dispatch Queue</a></li><li><span class="title-icon "></span><a href="#dispatchsettargetqueue"><b>1.4. </b>dispatch_set_target_queue</a></li><li><span class="title-icon "></span><a href="#dispatchafter"><b>1.5. </b>dispatch_after</a></li><li><span class="title-icon "></span><a href="#dispatchasync"><b>1.6. </b>dispatch_async</a></li><li><span class="title-icon "></span><a href="#dispatchsync"><b>1.7. </b>dispatch_sync</a></li><li><span class="title-icon "></span><a href="#dispatchbarrierasync"><b>1.8. </b>dispatch_barrier_async</a></li><li><span class="title-icon "></span><a href="#dispatchbarriersync"><b>1.9. </b>dispatch_barrier_sync</a></li><li><span class="title-icon "></span><a href="#dispatchapply"><b>1.10. </b>dispatch_apply</a></li><li><span class="title-icon "></span><a href="#dispatchsuspend"><b>1.11. </b>dispatch_suspend</a></li><li><span class="title-icon "></span><a href="#dispatchresume"><b>1.12. </b>dispatch_resume</a></li><li><span class="title-icon "></span><a href="#dispatchonce"><b>1.13. </b>dispatch_once</a></li><li><span class="title-icon "></span><a href="#dispatch-semaphore"><b>1.14. </b>Dispatch Semaphore</a></li></ul><li><span class="title-icon "></span><a href="#dispatch-group"><b>2. </b>Dispatch Group</a></li><li><span class="title-icon "></span><a href="#dispatch-io"><b>3. </b>Dispatch I/O</a></li><ul><li><span class="title-icon "></span><a href="#&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x961F;&#x5217;-label"><b>3.1. </b>&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x961F;&#x5217; Label</a></li></ul></ul></ul></div><a href="#gcd-&#x591A;&#x7EBF;&#x7A0B;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="gcd-&#x591A;&#x7EBF;&#x7A0B;"><a name="gcd-&#x591A;&#x7EBF;&#x7A0B;" class="anchor-navigation-ex-anchor" href="#gcd-&#x591A;&#x7EBF;&#x7A0B;"><i class="fa fa-link" aria-hidden="true"></i></a> GCD &#x591A;&#x7EBF;&#x7A0B;</h1>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#gcd-&#x591A;&#x7EBF;&#x7A0B;"><b>1. </b>GCD &#x591A;&#x7EBF;&#x7A0B;</a></li><ul><li><span class="title-icon "></span><a href="#dispatch-queue"><b>1.1. </b>Dispatch Queue</a></li><ul><li><span class="title-icon "></span><a href="#dispatchqueuecreate"><b>1.1.1. </b>dispatch_queue_create</a></li><li><span class="title-icon "></span><a href="#main-dispatch-queue"><b>1.1.2. </b>Main Dispatch Queue</a></li><li><span class="title-icon "></span><a href="#global-dispatch-queue"><b>1.1.3. </b>Global Dispatch Queue</a></li><li><span class="title-icon "></span><a href="#dispatchsettargetqueue"><b>1.1.4. </b>dispatch_set_target_queue</a></li><li><span class="title-icon "></span><a href="#dispatchafter"><b>1.1.5. </b>dispatch_after</a></li><li><span class="title-icon "></span><a href="#dispatchasync"><b>1.1.6. </b>dispatch_async</a></li><li><span class="title-icon "></span><a href="#dispatchsync"><b>1.1.7. </b>dispatch_sync</a></li><li><span class="title-icon "></span><a href="#dispatchbarrierasync"><b>1.1.8. </b>dispatch_barrier_async</a></li><li><span class="title-icon "></span><a href="#dispatchbarriersync"><b>1.1.9. </b>dispatch_barrier_sync</a></li><li><span class="title-icon "></span><a href="#dispatchapply"><b>1.1.10. </b>dispatch_apply</a></li><li><span class="title-icon "></span><a href="#dispatchsuspend"><b>1.1.11. </b>dispatch_suspend</a></li><li><span class="title-icon "></span><a href="#dispatchresume"><b>1.1.12. </b>dispatch_resume</a></li><li><span class="title-icon "></span><a href="#dispatchonce"><b>1.1.13. </b>dispatch_once</a></li><li><span class="title-icon "></span><a href="#dispatch-semaphore"><b>1.1.14. </b>Dispatch Semaphore</a></li></ul><li><span class="title-icon "></span><a href="#dispatch-group"><b>1.2. </b>Dispatch Group</a></li><li><span class="title-icon "></span><a href="#dispatch-io"><b>1.3. </b>Dispatch I/O</a></li><ul><li><span class="title-icon "></span><a href="#&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x961F;&#x5217;-label"><b>1.3.1. </b>&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x961F;&#x5217; Label</a></li></ul></ul></ul></div><a href="#gcd-&#x591A;&#x7EBF;&#x7A0B;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="gcd-&#x591A;&#x7EBF;&#x7A0B;"><a name="gcd-&#x591A;&#x7EBF;&#x7A0B;" class="anchor-navigation-ex-anchor" href="#gcd-&#x591A;&#x7EBF;&#x7A0B;"><i class="fa fa-link" aria-hidden="true"></i></a>1. GCD &#x591A;&#x7EBF;&#x7A0B;</h1>
 <p>Grand Central Dispatch</p>
-<h2 id="dispatch-queue"><a name="dispatch-queue" class="anchor-navigation-ex-anchor" href="#dispatch-queue"><i class="fa fa-link" aria-hidden="true"></i></a>1. Dispatch Queue</h2>
+<h2 id="dispatch-queue"><a name="dispatch-queue" class="anchor-navigation-ex-anchor" href="#dispatch-queue"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. Dispatch Queue</h2>
 <p>&#x6267;&#x884C;&#x5904;&#x7406;&#x7684;&#x7B49;&#x5F85;&#x961F;&#x5217;&#xFF0C;&#x5206;&#x4E3A;&#xFF1A;Serial Dispatch Queue &#x548C; Concurrent Dispatch Queue&#x3002;</p>
 <table>
 <thead>
@@ -608,7 +621,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="dispatchqueuecreate"><a name="dispatchqueuecreate" class="anchor-navigation-ex-anchor" href="#dispatchqueuecreate"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. dispatch_queue_create</h3>
+<h3 id="dispatchqueuecreate"><a name="dispatchqueuecreate" class="anchor-navigation-ex-anchor" href="#dispatchqueuecreate"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.1. dispatch_queue_create</h3>
 <pre><code class="lang-objc"><span class="hljs-built_in">dispatch_queue_t</span> serialDispatchQueue = dispatch_queue_create(<span class="hljs-string">&quot;com.example.serialDispatchQueue&quot;</span>, <span class="hljs-literal">NULL</span>);
 <span class="hljs-built_in">dispatch_queue_t</span> concurrentDispatchQueue = dispatch_queue_create(<span class="hljs-string">&quot;com.example.concurrentDispatchQueue&quot;</span>, DISPATCH_QUEUE_CONCURRENT);
 </code></pre>
@@ -616,24 +629,24 @@
 <pre><code class="lang-objc">dispatch_release(serialDispatchQueue); <span class="hljs-comment">// &#x5DF2;&#x5E9F;&#x5F03;</span>
 dispatch_retain(concurrentDispatchQueue); <span class="hljs-comment">// &#x5DF2;&#x5E9F;&#x5F03;</span>
 </code></pre>
-<h3 id="main-dispatch-queue"><a name="main-dispatch-queue" class="anchor-navigation-ex-anchor" href="#main-dispatch-queue"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. Main Dispatch Queue</h3>
+<h3 id="main-dispatch-queue"><a name="main-dispatch-queue" class="anchor-navigation-ex-anchor" href="#main-dispatch-queue"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.2. Main Dispatch Queue</h3>
 <p>&#x4E3B;&#x7EBF;&#x7A0B;&#x961F;&#x5217;&#xFF0C;&#x8FFD;&#x52A0;&#x5230;&#x4E3B;&#x7EBF;&#x7A0B;&#x7684;&#x4EFB;&#x52A1;&#x5728;&#x4E3B;&#x7EBF;&#x7A0B;&#x7684; RunLoop &#x5904;&#x7406;</p>
-<h3 id="global-dispatch-queue"><a name="global-dispatch-queue" class="anchor-navigation-ex-anchor" href="#global-dispatch-queue"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. Global Dispatch Queue</h3>
+<h3 id="global-dispatch-queue"><a name="global-dispatch-queue" class="anchor-navigation-ex-anchor" href="#global-dispatch-queue"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.3. Global Dispatch Queue</h3>
 <p>Global Dispatch Queue &#x662F;&#x6240;&#x6709;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x90FD;&#x80FD;&#x4F7F;&#x7528;&#x7684; Concurrent Dispatch Queue&#x3002;Global Dispatch Queue &#x6709; 4 &#x4E2A;&#x6267;&#x884C;&#x4F18;&#x5148;&#x7EA7;&#xFF0C;&#x5206;&#x522B;&#x4E3A;&#x9AD8;&#x4F18;&#x5148;&#x7EA7;&#x3001;&#x9ED8;&#x8BA4;&#x4F18;&#x5148;&#x7EA7;&#x3001;&#x4F4E;&#x4F18;&#x5148;&#x7EA7;&#x548C;&#x540E;&#x53F0;&#x4F18;&#x5148;&#x7EA7;&#x3002;&#x901A;&#x8FC7; XNU &#x5185;&#x6838;&#x7BA1;&#x7406;&#x7684;&#x7528;&#x4E8E; Global Dispatch Queue &#x7684;&#x7EBF;&#x7A0B;&#xFF0C;&#x5C06;&#x5404;&#x81EA;&#x4F7F;&#x7528;&#x7684; Global Dispatch Queue &#x7684;&#x6267;&#x884C;&#x4F18;&#x5148;&#x7EA7;&#x4F5C;&#x4E3A;&#x7EBF;&#x7A0B;&#x7684;&#x6267;&#x884C;&#x4F18;&#x5148;&#x7EA7;&#x4F7F;&#x7528;&#x3002;&#x5728;&#x5411; Global Dispatch Queue &#x8FFD;&#x52A0;&#x5904;&#x7406;&#x65F6;&#xFF0C;&#x5E94;&#x9009;&#x62E9;&#x4E0E;&#x5904;&#x7406;&#x5185;&#x5BB9;&#x5BF9;&#x5E94;&#x7684;&#x6267;&#x884C;&#x4F18;&#x5148;&#x7EA7;&#x7684; Global Dispatch Queue&#x3002;</p>
-<h3 id="dispatchsettargetqueue"><a name="dispatchsettargetqueue" class="anchor-navigation-ex-anchor" href="#dispatchsettargetqueue"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. dispatch_set_target_queue</h3>
-<h3 id="dispatchafter"><a name="dispatchafter" class="anchor-navigation-ex-anchor" href="#dispatchafter"><i class="fa fa-link" aria-hidden="true"></i></a>1.5. dispatch_after</h3>
-<h3 id="dispatchasync"><a name="dispatchasync" class="anchor-navigation-ex-anchor" href="#dispatchasync"><i class="fa fa-link" aria-hidden="true"></i></a>1.6. dispatch_async</h3>
-<h3 id="dispatchsync"><a name="dispatchsync" class="anchor-navigation-ex-anchor" href="#dispatchsync"><i class="fa fa-link" aria-hidden="true"></i></a>1.7. dispatch_sync</h3>
-<h3 id="dispatchbarrierasync"><a name="dispatchbarrierasync" class="anchor-navigation-ex-anchor" href="#dispatchbarrierasync"><i class="fa fa-link" aria-hidden="true"></i></a>1.8. dispatch_barrier_async</h3>
-<h3 id="dispatchbarriersync"><a name="dispatchbarriersync" class="anchor-navigation-ex-anchor" href="#dispatchbarriersync"><i class="fa fa-link" aria-hidden="true"></i></a>1.9. dispatch_barrier_sync</h3>
-<h3 id="dispatchapply"><a name="dispatchapply" class="anchor-navigation-ex-anchor" href="#dispatchapply"><i class="fa fa-link" aria-hidden="true"></i></a>1.10. dispatch_apply</h3>
-<h3 id="dispatchsuspend"><a name="dispatchsuspend" class="anchor-navigation-ex-anchor" href="#dispatchsuspend"><i class="fa fa-link" aria-hidden="true"></i></a>1.11. dispatch_suspend</h3>
-<h3 id="dispatchresume"><a name="dispatchresume" class="anchor-navigation-ex-anchor" href="#dispatchresume"><i class="fa fa-link" aria-hidden="true"></i></a>1.12. dispatch_resume</h3>
-<h3 id="dispatchonce"><a name="dispatchonce" class="anchor-navigation-ex-anchor" href="#dispatchonce"><i class="fa fa-link" aria-hidden="true"></i></a>1.13. dispatch_once</h3>
-<h3 id="dispatch-semaphore"><a name="dispatch-semaphore" class="anchor-navigation-ex-anchor" href="#dispatch-semaphore"><i class="fa fa-link" aria-hidden="true"></i></a>1.14. Dispatch Semaphore</h3>
-<h2 id="dispatch-group"><a name="dispatch-group" class="anchor-navigation-ex-anchor" href="#dispatch-group"><i class="fa fa-link" aria-hidden="true"></i></a>2. Dispatch Group</h2>
-<h2 id="dispatch-io"><a name="dispatch-io" class="anchor-navigation-ex-anchor" href="#dispatch-io"><i class="fa fa-link" aria-hidden="true"></i></a>3. Dispatch I/O</h2>
-<h3 id="&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x961F;&#x5217;-label"><a name="&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x961F;&#x5217;-label" class="anchor-navigation-ex-anchor" href="#&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x961F;&#x5217;-label"><i class="fa fa-link" aria-hidden="true"></i></a>3.1. &#x83B7;&#x53D6;&#x5F53;&#x524D;&#x961F;&#x5217; Label</h3>
+<h3 id="dispatchsettargetqueue"><a name="dispatchsettargetqueue" class="anchor-navigation-ex-anchor" href="#dispatchsettargetqueue"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.4. dispatch_set_target_queue</h3>
+<h3 id="dispatchafter"><a name="dispatchafter" class="anchor-navigation-ex-anchor" href="#dispatchafter"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.5. dispatch_after</h3>
+<h3 id="dispatchasync"><a name="dispatchasync" class="anchor-navigation-ex-anchor" href="#dispatchasync"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.6. dispatch_async</h3>
+<h3 id="dispatchsync"><a name="dispatchsync" class="anchor-navigation-ex-anchor" href="#dispatchsync"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.7. dispatch_sync</h3>
+<h3 id="dispatchbarrierasync"><a name="dispatchbarrierasync" class="anchor-navigation-ex-anchor" href="#dispatchbarrierasync"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.8. dispatch_barrier_async</h3>
+<h3 id="dispatchbarriersync"><a name="dispatchbarriersync" class="anchor-navigation-ex-anchor" href="#dispatchbarriersync"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.9. dispatch_barrier_sync</h3>
+<h3 id="dispatchapply"><a name="dispatchapply" class="anchor-navigation-ex-anchor" href="#dispatchapply"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.10. dispatch_apply</h3>
+<h3 id="dispatchsuspend"><a name="dispatchsuspend" class="anchor-navigation-ex-anchor" href="#dispatchsuspend"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.11. dispatch_suspend</h3>
+<h3 id="dispatchresume"><a name="dispatchresume" class="anchor-navigation-ex-anchor" href="#dispatchresume"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.12. dispatch_resume</h3>
+<h3 id="dispatchonce"><a name="dispatchonce" class="anchor-navigation-ex-anchor" href="#dispatchonce"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.13. dispatch_once</h3>
+<h3 id="dispatch-semaphore"><a name="dispatch-semaphore" class="anchor-navigation-ex-anchor" href="#dispatch-semaphore"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.14. Dispatch Semaphore</h3>
+<h2 id="dispatch-group"><a name="dispatch-group" class="anchor-navigation-ex-anchor" href="#dispatch-group"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. Dispatch Group</h2>
+<h2 id="dispatch-io"><a name="dispatch-io" class="anchor-navigation-ex-anchor" href="#dispatch-io"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. Dispatch I/O</h2>
+<h3 id="&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x961F;&#x5217;-label"><a name="&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x961F;&#x5217;-label" class="anchor-navigation-ex-anchor" href="#&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x961F;&#x5217;-label"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.1. &#x83B7;&#x53D6;&#x5F53;&#x524D;&#x961F;&#x5217; Label</h3>
 <pre><code class="lang-swift"><span class="hljs-type">String</span>(validatingUTF8: __dispatch_queue_get_label(<span class="hljs-literal">nil</span>))
 </code></pre>
 
@@ -695,7 +708,7 @@ dispatch_retain(concurrentDispatchQueue); <span class="hljs-comment">// &#x5DF2;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"GCD多线程","categories":"Foundation","description":"GCD 多线程","typora-root-url":"../../../source","level":"2.1.1","depth":2,"next":{"title":"AutoLayout自动布局","level":"2.1.2","depth":2,"path":"Foundation/AutoLayout自动布局.md","ref":"Foundation/AutoLayout自动布局.md","articles":[]},"previous":{"title":"Foundation","level":"2.1","depth":1,"path":"Foundation/README.md","ref":"Foundation/README.md","articles":[{"title":"GCD多线程","level":"2.1.1","depth":2,"path":"Foundation/GCD多线程.md","ref":"Foundation/GCD多线程.md","articles":[]},{"title":"AutoLayout自动布局","level":"2.1.2","depth":2,"path":"Foundation/AutoLayout自动布局.md","ref":"Foundation/AutoLayout自动布局.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["code","alerts","anchor-navigation-ex","search-plus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":false,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"alerts":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Note","gitbook":"*"},"file":{"path":"Foundation/GCD多线程.md","mtime":"2022-02-02T07:09:29.248Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-02-02T07:10:14.739Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"GCD多线程","level":"2.1.1","depth":2,"next":{"title":"AutoLayout自动布局","level":"2.1.2","depth":2,"path":"Foundation/AutoLayout自动布局.md","ref":"Foundation/AutoLayout自动布局.md","articles":[]},"previous":{"title":"Foundation","level":"2.1","depth":1,"path":"Foundation/README.md","ref":"Foundation/README.md","articles":[{"title":"GCD多线程","level":"2.1.1","depth":2,"path":"Foundation/GCD多线程.md","ref":"Foundation/GCD多线程.md","articles":[]},{"title":"AutoLayout自动布局","level":"2.1.2","depth":2,"path":"Foundation/AutoLayout自动布局.md","ref":"Foundation/AutoLayout自动布局.md","articles":[]},{"title":"App Thinning","level":"2.1.3","depth":2,"path":"Foundation/AppThinning.md","ref":"Foundation/AppThinning.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["code","alerts","anchor-navigation-ex","search-plus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"showLevel":true,"showGoTop":true,"printLog":false,"multipleH":false,"multipleH1":true,"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false}},"alerts":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Note","gitbook":"*"},"file":{"path":"Foundation/GCD多线程.md","mtime":"2022-11-17T09:19:54.537Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-11-17T09:20:44.757Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

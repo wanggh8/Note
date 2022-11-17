@@ -1,10 +1,3 @@
----
-title: GCD 多线程
-categories: Foundation
-description: GCD 多线程
-typora-root-url: ../../../source
----
-
 # GCD 多线程
 
 Grand Central Dispatch

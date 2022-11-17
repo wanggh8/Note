@@ -1,0 +1,774 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>App Thinning · Note</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../Swift/" />
+    
+    
+    <link rel="prev" href="AutoLayout自动布局.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Develop</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Foundation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="GCD多线程.html">
+            
+                <a href="GCD多线程.html">
+            
+                    
+                    GCD多线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="AutoLayout自动布局.html">
+            
+                <a href="AutoLayout自动布局.html">
+            
+                    
+                    AutoLayout自动布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.1.3" data-path="AppThinning.html">
+            
+                <a href="AppThinning.html">
+            
+                    
+                    App Thinning
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../Swift/">
+            
+                <a href="../Swift/">
+            
+                    
+                    Swift
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../Swift/Swift第三方库.html">
+            
+                <a href="../Swift/Swift第三方库.html">
+            
+                    
+                    Swift第三方库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../Swift/Swift内存管理.html">
+            
+                <a href="../Swift/Swift内存管理.html">
+            
+                    
+                    内存管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../ObjC/">
+            
+                <a href="../ObjC/">
+            
+                    
+                    Objective-C
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../ObjC/OC基础.html">
+            
+                <a href="../ObjC/OC基础.html">
+            
+                    
+                    基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../ObjC/OC块.html">
+            
+                <a href="../ObjC/OC块.html">
+            
+                    
+                    块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="../ObjC/OC内存管理.html">
+            
+                <a href="../ObjC/OC内存管理.html">
+            
+                    
+                    内存管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" data-path="../ObjC/OC命名规范.html">
+            
+                <a href="../ObjC/OC命名规范.html">
+            
+                    
+                    命名规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.5" data-path="../ObjC/OC注释.html">
+            
+                <a href="../ObjC/OC注释.html">
+            
+                    
+                    注释
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.6" data-path="../ObjC/OC-Tips.html">
+            
+                <a href="../ObjC/OC-Tips.html">
+            
+                    
+                    Tips
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../iOS/">
+            
+                <a href="../iOS/">
+            
+                    
+                    iOS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="../iOS/内购.html">
+            
+                <a href="../iOS/内购.html">
+            
+                    
+                    In-App-Purchase
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="../iOS/后台下载.html">
+            
+                <a href="../iOS/后台下载.html">
+            
+                    
+                    后台下载
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../macOS/">
+            
+                <a href="../macOS/">
+            
+                    
+                    macOS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="../macOS/App-Sandbox.html">
+            
+                <a href="../macOS/App-Sandbox.html">
+            
+                    
+                    App Sandbox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.2" data-path="../macOS/NSViewController.html">
+            
+                <a href="../macOS/NSViewController.html">
+            
+                    
+                    NSViewController
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Mac</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../Mac/">
+            
+                <a href="../Mac/">
+            
+                    
+                    Mac
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../Mac/Mac终端zsh忽略大小写.html">
+            
+                <a href="../Mac/Mac终端zsh忽略大小写.html">
+            
+                    
+                    Mac终端zsh忽略大小写
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../Mac/Mac键盘快捷键.html">
+            
+                <a href="../Mac/Mac键盘快捷键.html">
+            
+                    
+                    Mac键盘快捷键
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../Mac/Mac开源软件.html">
+            
+                <a href="../Mac/Mac开源软件.html">
+            
+                    
+                    Mac开源软件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="../Mac/zsh.md">
+            
+                <span>
+            
+                    
+                    Mac zsh
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="../Mac/Homebrew.html">
+            
+                <a href="../Mac/Homebrew.html">
+            
+                    
+                    Homebrew
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../Git/">
+            
+                <a href="../Git/">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../Git/Git-Manual.html">
+            
+                <a href="../Git/Git-Manual.html">
+            
+                    
+                    Git Manual
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="../Git/Git-LFS.html">
+            
+                <a href="../Git/Git-LFS.html">
+            
+                    
+                    Git LFS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >App Thinning</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#app-thinning"><b>1. </b>App Thinning</a></li><ul><li><span class="title-icon "></span><a href="#&#x6307;&#x4EE4;&#x96C6;&#x67B6;&#x6784;"><b>1.1. </b>&#x6307;&#x4EE4;&#x96C6;&#x67B6;&#x6784;</a></li><ul><li><span class="title-icon "></span><a href="#ios-&#x8BBE;&#x5907;&#x652F;&#x6301;&#x7684;&#x6307;&#x4EE4;&#x96C6;"><b>1.1.1. </b>iOS &#x8BBE;&#x5907;&#x652F;&#x6301;&#x7684;&#x6307;&#x4EE4;&#x96C6;</a></li><li><span class="title-icon "></span><a href="#macos-&#x8BBE;&#x5907;&#x652F;&#x6301;&#x7684;&#x6307;&#x4EE4;&#x96C6;&#x3000;"><b>1.1.2. </b>macOS &#x8BBE;&#x5907;&#x652F;&#x6301;&#x7684;&#x6307;&#x4EE4;&#x96C6;&#x3000;</a></li><li><span class="title-icon "></span><a href="#architectures"><b>1.1.3. </b>Architectures</a></li><li><span class="title-icon "></span><a href="#valid-architectures&#x3000;&#x3000;"><b>1.1.4. </b>Valid Architectures&#x3000;&#x3000;</a></li><li><span class="title-icon "></span><a href="#build-active-architecture-only"><b>1.1.5. </b>Build Active Architecture Only:</a></li><li><span class="title-icon "></span><a href="#&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#x5927;&#x5C0F;&#x9650;&#x5236;"><b>1.1.6. </b>&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#x5927;&#x5C0F;&#x9650;&#x5236;</a></li></ul><li><span class="title-icon "></span><a href="#swift"><b>1.2. </b>Swift</a></li><ul><li><span class="title-icon "></span><a href="#swift-&#x6807;&#x51C6;&#x5E93;"><b>1.2.1. </b>Swift &#x6807;&#x51C6;&#x5E93;</a></li></ul><li><span class="title-icon "></span><a href="#&#x53C2;&#x8003;"><b>1.3. </b>&#x53C2;&#x8003;</a></li></ul></ul></div><a href="#app-thinning" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="app-thinning"><a name="app-thinning" class="anchor-navigation-ex-anchor" href="#app-thinning"><i class="fa fa-link" aria-hidden="true"></i></a>1. App Thinning</h1>
+<p>&#x5305;&#x4F53;&#x79EF;&#x5927;&#x5C0F;&#x4F18;&#x5316;</p>
+<h2 id="&#x6307;&#x4EE4;&#x96C6;&#x67B6;&#x6784;"><a name="&#x6307;&#x4EE4;&#x96C6;&#x67B6;&#x6784;" class="anchor-navigation-ex-anchor" href="#&#x6307;&#x4EE4;&#x96C6;&#x67B6;&#x6784;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x6307;&#x4EE4;&#x96C6;&#x67B6;&#x6784;</h2>
+<h3 id="ios-&#x8BBE;&#x5907;&#x652F;&#x6301;&#x7684;&#x6307;&#x4EE4;&#x96C6;"><a name="ios-&#x8BBE;&#x5907;&#x652F;&#x6301;&#x7684;&#x6307;&#x4EE4;&#x96C6;" class="anchor-navigation-ex-anchor" href="#ios-&#x8BBE;&#x5907;&#x652F;&#x6301;&#x7684;&#x6307;&#x4EE4;&#x96C6;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.1. iOS &#x8BBE;&#x5907;&#x652F;&#x6301;&#x7684;&#x6307;&#x4EE4;&#x96C6;</h3>
+<h4 id="armv6"><a name="armv6" class="anchor-navigation-ex-anchor" href="#armv6"><i class="fa fa-link" aria-hidden="true"></i></a>armv6:</h4>
+<p>&#x3000;&#x3000;iPhone, iPhone 3G, iPod 1G/2G</p>
+<h4 id="armv7"><a name="armv7" class="anchor-navigation-ex-anchor" href="#armv7"><i class="fa fa-link" aria-hidden="true"></i></a>armv7:</h4>
+<p>&#x3000;&#x3000;iPhone 3GS, iPhone 4, iPhone 4S, iPod 3G/4G/5G, iPad, iPad 2, iPad 3, iPad Mini</p>
+<h4 id="armv7s&#xFF1A;"><a name="armv7s&#xFF1A;" class="anchor-navigation-ex-anchor" href="#armv7s&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>armv7s&#xFF1A;</h4>
+<p>&#x3000;&#x3000; iPhone 5, iPhone 5c, iPad 4</p>
+<h4 id="arm64"><a name="arm64" class="anchor-navigation-ex-anchor" href="#arm64"><i class="fa fa-link" aria-hidden="true"></i></a>arm64:</h4>
+<p>&#x3000;&#x3000;iPhone X&#xFF0C;iPhone 8(Plus)&#xFF0C;iPhone 7(Plus)&#xFF0C;iPhone 6(Plus)&#xFF0C;iPhone 6s(Plus), iPhone 5s, iPad Air(2), Retina iPad Mini(2,3)</p>
+<h4 id="arm64e"><a name="arm64e" class="anchor-navigation-ex-anchor" href="#arm64e"><i class="fa fa-link" aria-hidden="true"></i></a>arm64e:</h4>
+<p>&#x3000;&#x3000;iPhone XS\XR\XS Max
+&#x3000;&#x3000;</p>
+<h3 id="macos-&#x8BBE;&#x5907;&#x652F;&#x6301;&#x7684;&#x6307;&#x4EE4;&#x96C6;&#x3000;"><a name="macos-&#x8BBE;&#x5907;&#x652F;&#x6301;&#x7684;&#x6307;&#x4EE4;&#x96C6;&#x3000;" class="anchor-navigation-ex-anchor" href="#macos-&#x8BBE;&#x5907;&#x652F;&#x6301;&#x7684;&#x6307;&#x4EE4;&#x96C6;&#x3000;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.2. macOS &#x8BBE;&#x5907;&#x652F;&#x6301;&#x7684;&#x6307;&#x4EE4;&#x96C6;&#x3000;</h3>
+<p>x86_64 &#x548C; arm64</p>
+<h3 id="architectures"><a name="architectures" class="anchor-navigation-ex-anchor" href="#architectures"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.3. Architectures</h3>
+<p>&#x6307;&#x5B9A;&#x5DE5;&#x7A0B;&#x88AB;&#x7F16;&#x8BD1;&#x6210;&#x652F;&#x6301;&#x54EA;&#x4E9B;&#x6307;&#x4EE4;&#x96C6;&#x7C7B;&#x578B;&#xFF0C;&#x800C;&#x652F;&#x6301;&#x7684;&#x6307;&#x4EE4;&#x96C6;&#x8D8A;&#x591A;&#xFF0C;&#x5C31;&#x4F1A;&#x7F16;&#x8BD1;&#x51FA;&#x5F88;&#x591A;&#x4E2A;&#x6307;&#x4EE4;&#x96C6;&#x4EE3;&#x7801;&#x7684;&#x6570;&#x636E;&#x5305;&#xFF0C;&#x5BF9;&#x5E94;&#x751F;&#x6210;&#x4E8C;&#x8FDB;&#x5236;&#x5305;&#x5C31;&#x8D8A;&#x5927;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;ipa&#x5305;&#x8D8A;&#x5927;&#x3002;&#x3000;</p>
+<h3 id="valid-architectures&#x3000;&#x3000;"><a name="valid-architectures&#x3000;&#x3000;" class="anchor-navigation-ex-anchor" href="#valid-architectures&#x3000;&#x3000;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.4. Valid Architectures&#x3000;&#x3000;</h3>
+<p>&#x8BE5;&#x7F16;&#x8BD1;&#x9879;&#x6307;&#x5B9A;&#x53EF;&#x80FD;&#x652F;&#x6301;&#x7684;&#x6307;&#x4EE4;&#x96C6;&#xFF0C;&#x8BE5;&#x5217;&#x8868;&#x548C;Architectures&#x5217;&#x8868;&#x7684;&#x4EA4;&#x96C6;&#xFF0C;&#x5C06;&#x662F;Xcode&#x6700;&#x7EC8;&#x751F;&#x6210;&#x4E8C;&#x8FDB;&#x5236;&#x5305;&#x6240;&#x652F;&#x6301;&#x7684;&#x6307;&#x4EE4;&#x96C6;&#x3002;</p>
+<p>&#x3000;&#x3000;&#x6BD4;&#x5982;&#xFF0C;&#x4F60;&#x7684;Valid Architectures&#x8BBE;&#x7F6E;&#x7684;&#x652F;&#x6301;arm&#x6307;&#x4EE4;&#x96C6;&#x7248;&#x672C;&#x6709;&#xFF1A;armv7/armv7s/arm64&#xFF0C;&#x5BF9;&#x5E94;&#x7684;Architectures&#x8BBE;&#x7F6E;&#x7684;&#x652F;&#x6301;arm&#x6307;&#x4EE4;&#x96C6;&#x7248;&#x672C;&#x6709;&#xFF1A;arm64&#xFF0C;&#x8FD9;&#x65F6;Xcode&#x53EA;&#x4F1A;&#x751F;&#x6210;&#x4E00;&#x4E2A;arm64&#x6307;&#x4EE4;&#x96C6;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x5305;&#x3002;</p>
+<p>&#x3000;&#x3000;&#x51CF;&#x5C11;&#x5B89;&#x88C5;&#x5305;&#x4E2D;&#x7684;&#x6307;&#x4EE4;&#x96C6;&#x6570;&#x636E;&#x5305;&#x53EF;&#x4EE5;&#x51CF;&#x5C0F;&#x6253;&#x5305;ipa&#x7684;&#x5927;&#x5C0F;&#x3002;&#x3000;&#x3000;
+&#x3000;&#x3000;</p>
+<h3 id="build-active-architecture-only"><a name="build-active-architecture-only" class="anchor-navigation-ex-anchor" href="#build-active-architecture-only"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.5. Build Active Architecture Only:</h3>
+<p>&#x9ED8;&#x8BA4;Debug&#x7684;&#x65F6;&#x5019;&#x8BBE;&#x7F6E;&#x4E3A;YES&#xFF0C;Release&#x7684;&#x65F6;&#x5019;&#x8BBE;&#x7F6E;&#x4E3A;NO&#x3002;&#x8BBE;&#x7F6E;&#x4E3A;YES&#x662F;&#x53EA;&#x7F16;&#x8BD1;&#x5F53;&#x524D;&#x7684;architecture&#x7248;&#x672C;&#xFF0C;&#x751F;&#x6210;&#x7684;&#x5305;&#x53EA;&#x5305;&#x542B;&#x5F53;&#x524D;&#x8FDE;&#x63A5;&#x8BBE;&#x5907;&#x7684;&#x6307;&#x4EE4;&#x96C6;&#x4EE3;&#x7801;&#x3002;&#x8BBE;&#x7F6E;&#x4E3A;NO&#xFF0C;&#x5219;&#x751F;&#x6210;&#x7684;&#x5305;&#x5305;&#x542B;&#x6240;&#x6709;&#x7684;&#x6307;&#x4EE4;&#x96C6;&#x4EE3;&#x7801;&#xFF08;&#x4E0A;&#x9762;&#x7684;Valid Architectures&#x8DDF;Architectures&#x7684;&#x4EA4;&#x96C6;&#xFF09;&#x3002;&#x56E0;&#x6B64;&#x4E3A;&#x4E86;&#x8C03;&#x8BD5;&#x901F;&#x5EA6;&#x66F4;&#x5FEB;&#xFF0C;&#x5219;Debug&#x5E94;&#x8BE5;&#x8BBE;&#x7F6E;&#x4E3A;YES&#x3002;</p>
+<h3 id="&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#x5927;&#x5C0F;&#x9650;&#x5236;"><a name="&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#x5927;&#x5C0F;&#x9650;&#x5236;" class="anchor-navigation-ex-anchor" href="#&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#x5927;&#x5C0F;&#x9650;&#x5236;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.6. &#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#x5927;&#x5C0F;&#x9650;&#x5236;</h3>
+<p>&#x6839;&#x636E;&#x6700;&#x5927;&#x6784;&#x5EFA;&#x7248;&#x672C;&#x6587;&#x4EF6;&#x5927;&#x5C0F;&#x63CF;&#x8FF0;&#xFF0C;&#x82F9;&#x679C;&#x5BF9;&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#x5927;&#x5C0F;&#x6709;&#x660E;&#x786E;&#x9650;&#x5236;&#xFF0C;&#x8D85;&#x8FC7;&#x8BE5;&#x9650;&#x5236;&#x4F1A;&#x5BFC;&#x81F4; App &#x5BA1;&#x6838;&#x88AB;&#x62D2;&#x3002;&#x5177;&#x4F53;&#x9650;&#x5236;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ul>
+<li>iOS 7 &#x4E4B;&#x524D;&#xFF0C;&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;&#x4E2D;&#x6240;&#x6709;&#x7684; __TEXT &#x6BB5;&#x603B;&#x548C;&#x4E0D;&#x5F97;&#x8D85;&#x8FC7; 80 MB</li>
+<li>iOS 7.X &#x81F3; iOS 8.X &#xFF0C;&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x6BCF;&#x4E2A;&#x7279;&#x5B9A;&#x67B6;&#x6784;&#x4E2D;&#x7684; __TEXT &#x6BB5;&#x4E0D;&#x5F97;&#x8D85;&#x8FC7; 60 MB</li>
+<li>iOS 9.0 &#x4E4B;&#x540E;&#xFF0C;&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;&#x4E2D;&#x6240;&#x6709;&#x7684; __TEXT &#x6BB5;&#x603B;&#x548C;&#x4E0D;&#x5F97;&#x8D85;&#x8FC7; 500 MB</li>
+</ul>
+<h2 id="swift"><a name="swift" class="anchor-navigation-ex-anchor" href="#swift"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. Swift</h2>
+<h3 id="swift-&#x6807;&#x51C6;&#x5E93;"><a name="swift-&#x6807;&#x51C6;&#x5E93;" class="anchor-navigation-ex-anchor" href="#swift-&#x6807;&#x51C6;&#x5E93;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1. Swift &#x6807;&#x51C6;&#x5E93;</h3>
+<p>Swift &#x6807;&#x51C6;&#x5E93;&#x5728;&#x6253;&#x5305;&#x52A8;&#x6001;&#x5E93;&#x65F6;&#xFF0C;&#x4F1A;&#x5B8C;&#x6574;&#x653E;&#x5230; Frameworks &#x6587;&#x4EF6;&#x5939;&#x4E0B;</p>
+<ul>
+<li>&#x6253;&#x5305;&#x67B6;&#x6784;&#x5305;&#x542B;: armv7&#x3001;armv7s&#x3001;arm64&#x3001;arm64e</li>
+<li>&#x538B;&#x7F29;&#x524D;&#x5171;&#x8BA1; 151.1  MB</li>
+<li>&#x538B;&#x7F29;&#x540E;&#x5171;&#x8BA1; 65.2 MB</li>
+<li>&#x9884;&#x8BA1;&#x5BF9; App &#x5F71;&#x54CD;&#xFF1A;&#x5305;&#x4F53;&#x589E;&#x5927; 65.2 MB</li>
+</ul>
+<p>&#x5728;&#x5C06;&#x52A8;&#x6001;&#x5E93;&#x6253;&#x5305;&#x8FDB; App &#x5DE5;&#x7A0B;&#x65F6;&#xFF0C;XcodeBuild &#x4F1A;&#x5BF9; Swift &#x6807;&#x51C6;&#x5E93;&#x8FDB;&#x884C;&#x4F18;&#x5316;&#xFF0C;
+strip &#x6389;&#x672A;&#x4F7F;&#x7528;&#x7684;&#x7B26;&#x53F7;&#xFF0C;&#x4ECE;&#x800C;&#x51CF;&#x5C11; Swift &#x6807;&#x51C6;&#x5E93;&#x5927;&#x5C0F;&#x3002;&#x6253;&#x8FDB; App &#x5185;&#x7684;&#x52A8;&#x6001;&#x5E93;&#x5305;&#x542B;&#x7684; Swift &#x6807;&#x51C6;&#x5E93;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ul>
+<li>&#x6253;&#x5305;&#x67B6;&#x6784;&#x5305;&#x542B;: armv7&#x3001;armv7s&#x3001;arm64 </li>
+<li>&#x538B;&#x7F29;&#x524D;&#x5171;&#x8BA1; 40.4  MB</li>
+<li>&#x538B;&#x7F29;&#x540E;&#x5171;&#x8BA1; 12.6 MB</li>
+<li>&#x9884;&#x8BA1;&#x5BF9; App &#x5F71;&#x54CD;&#xFF1A;&#x5305;&#x4F53;&#x589E;&#x5927; 12.6 MB</li>
+</ul>
+<p>&#x4ECE;&#x591A;&#x67B6;&#x6784;&#xFF0C;&#x53D8;&#x6210;&#x5355;&#x67B6;&#x6784;&#x652F;&#x6301;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x975E;&#x7CFB;&#x7EDF;&#x7684;&#x52A8;&#x6001;&#x5E93;&#xFF0C;&#x4F1A;&#x9A6C;&#x4E0A;&#x53D8;&#x6210;&#x5355;&#x67B6;&#x6784;&#xFF0C;&#x5927;&#x5C0F;&#x6709;&#x660E;&#x663E;&#x7684;&#x53D8;&#x5316;&#x3002;&#x800C; Swift &#x6807;&#x51C6;&#x5E93;&#x5374;&#x4FDD;&#x6301;&#x4E0D;&#x53D8;&#x3002;
+Swift &#x6807;&#x51C6;&#x5E93;&#xFF0C;&#x5728;&#x5206;&#x53D1;&#x5230;&#x5177;&#x4F53;&#x8BBE;&#x5907;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x662F;&#x5355;&#x67B6;&#x6784;</p>
+<p>UniPack &#x89E3;&#x51B3;&#x65B9;&#x6848;</p>
+<p>&#x5C06;&#x52A8;&#x6001;&#x5E93;&#x6253;&#x8FDB;&#x4E00;&#x4E2A;&#x7A7A;&#x58F3; App&#xFF0C;&#x5F85;Xcode&#x4F18;&#x5316;&#x540E;&#x5C06;ipa&#x4E2D;&#x52A8;&#x6001;&#x5E93;&#x548C;Swift&#x6587;&#x4EF6;&#x62F7;&#x51FA;&#x5E76;&#x7B7E;&#x540D;&#xFF0C;&#x6253;&#x5230;&#x76EE;&#x6807;ipa&#x4E2D;</p>
+<h3 id=""> </h3>
+<h2 id="&#x53C2;&#x8003;"><a name="&#x53C2;&#x8003;" class="anchor-navigation-ex-anchor" href="#&#x53C2;&#x8003;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. &#x53C2;&#x8003;</h2>
+<ul>
+<li><a href="https://www.zybuluo.com/qidiandasheng/note/1662385" target="_blank">https://www.zybuluo.com/qidiandasheng/note/1662385</a></li>
+<li><a href="https://juejin.cn/post/6844904169938092045#heading-23" target="_blank">https://juejin.cn/post/6844904169938092045#heading-23</a></li>
+<li><a href="https://www.cnblogs.com/lulushen/p/8135269.html" target="_blank">https://www.cnblogs.com/lulushen/p/8135269.html</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="AutoLayout自动布局.html" class="navigation navigation-prev " aria-label="Previous page: AutoLayout自动布局">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../Swift/" class="navigation navigation-next " aria-label="Next page: Swift">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"App Thinning","level":"2.1.3","depth":2,"next":{"title":"Swift","level":"2.2","depth":1,"path":"Swift/README.md","ref":"Swift/README.md","articles":[{"title":"Swift第三方库","level":"2.2.1","depth":2,"path":"Swift/Swift第三方库.md","ref":"Swift/Swift第三方库.md","articles":[]},{"title":"内存管理","level":"2.2.2","depth":2,"path":"Swift/Swift内存管理.md","ref":"Swift/Swift内存管理.md","articles":[]}]},"previous":{"title":"AutoLayout自动布局","level":"2.1.2","depth":2,"path":"Foundation/AutoLayout自动布局.md","ref":"Foundation/AutoLayout自动布局.md","articles":[]},"dir":"ltr"},"config":{"plugins":["code","alerts","anchor-navigation-ex","search-plus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"showLevel":true,"showGoTop":true,"printLog":false,"multipleH":false,"multipleH1":true,"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false}},"alerts":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Note","gitbook":"*"},"file":{"path":"Foundation/AppThinning.md","mtime":"2022-11-17T09:19:54.537Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-11-17T09:20:44.757Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -7,6 +7,7 @@
 * [Foundation](Foundation/README.md)
 	* [GCD多线程](Foundation/GCD多线程.md)
 	* [AutoLayout自动布局](Foundation/AutoLayout自动布局.md)
+	* [App Thinning](Foundation/AppThinning.md)
 
 * [Swift](Swift/README.md)
 	* [Swift第三方库](Swift/Swift第三方库.md) 
