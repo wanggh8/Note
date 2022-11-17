@@ -109,3 +109,27 @@ deleteToBeginningOfLine:, moveToEndOfLine:, deleteToBeginningOfLine:, deleteBack
 
 解决方法：Xcode --->Window ---> Devices ---> 自己的真机 ---> installed Apps ----> 删除这个App  ----> 重新运行
 
+## 查看 iPA entitlements
+
+`codesign -d Demo_netease2.app  --entitlements -`
+
+## Xcode Build
+
+https://help.apple.com/xcode/mac/current/#/itcaec37c2a6
+
+[Xcode 常见 CLI 工具](https://mp.weixin.qq.com/s/jF6mTsxC2xtn8Xp1Mn72Zw)
+
+
+Create an archive of the framework or library for each platform you wish to support by entering one xcodebuild command for each platform’s generic run destination. To build a macOS variant of your framework built for UIKit, pass Mac Catalyst as the variant argument.
+
+```sh
+xcodebuild archive  [-project <project name>] -scheme <scheme name> -destination "generic/platform=<platform name>[,arch=<architecture name>][,variant=<variant name>]" [-configuration <configuration name>] [-archivePath <archive output path>]
+```
+
+Create an XCFramework which includes each variant of the framework or library by entering an xcodebuild command with the -create-xcframework option in Terminal:
+
+```sh
+xcodebuild -create-xcframework -framework <path> [-framework <path>...] -output <path>
+
+xcodebuild -create-xcframework -library <path> [-headers <path>] [-library <path> [-headers <path>]...] -output <path>
+```
