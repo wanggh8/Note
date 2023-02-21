@@ -1,10 +1,30 @@
 ---
-title: macOS NSView 
-description: macOS NSView
+title: AppKit 
+description: macOS Appkit
 typora-root-url: ../
 ---
 
-# macOS NSView
+## NSWindow
+
+
+
+## NSViewController 
+
+在 macOS 10.10 及更高版本中，NSViewController 使用初始化方法 `[[MyViewController alloc] init]` 时，调用 `loadView` 将加载与 NSViewController 同名的 Nib 文件，将 Nib 文件实例化视图连接到视图控制器的视图属性。如果不存在 Nib 文件，会触发运行时崩溃：
+
+```
+-[NSNib _initWithNibNamed:bundle:options:] could not load the nibName: NSViewController in bundle (null).
+```
+
+解决办法：重写 `loadView` 方法
+
+```objc
+- (void)loadView {
+
+}
+```
+
+## NSView
 
 在 macOS 10.10 及更高版本中，NSView 使用初始化方法时，调用 `loadView` 将加载与 NSView 同名的 Nib 文件，将 Nib 文件实例化视图连接到视图控制器的视图属性。如果不存在 Nib 文件，会触发运行时崩溃：
 
@@ -58,6 +78,8 @@ lazy var scrollView: NSScrollView = {
     return scrollView
 }()
 ```
+
+
 
 
 
