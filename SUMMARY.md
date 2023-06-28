@@ -43,9 +43,13 @@
     * [Mac终端zsh忽略大小写](Mac/Mac终端zsh忽略大小写.md)
     * [Mac键盘快捷键](Mac/Mac键盘快捷键.md)   
     * [Mac开源软件](Mac/Mac开源软件.md) 
+    * [FRP客户端配置](Mac/FRP客户端配置.md) 
     * [zsh](Mac/zsh.md) 
     * [Homebrew](Mac/Homebrew.md) 
     * [Xcode](Mac/Xcode.md) 
+
+* [Linux](Linux/README.md)
+    * [WSL](Linux/WSL.md)
 
 * [Git](Git/README.md)
     * [Git Manual](Git/Git-Manual.md)
