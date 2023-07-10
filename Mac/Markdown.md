@@ -1,9 +1,10 @@
 ---
 title: Markdown 语法
 categories: Mac
-description:Markdown 语法
+description: Markdown 语法
 cover: /images/MacOS.jpg
 ---
+
 
 *   This is the first list item.
 *   Here's the second list item.
@@ -38,6 +39,8 @@ cover: /images/MacOS.jpg
 <img src="https://miro.medium.com/v2/resize:fit:1024/1*ABo4dTsrgA7UboVI7c6yIA.jpeg" width="200px"
 alt="imagename">
 </div>
+
+![Tux, the Linux mascot-w200](https://miro.medium.com/v2/resize:fit:1024/1*ABo4dTsrgA7UboVI7c6yIA.jpeg)
 
 1. Close the file.
 
