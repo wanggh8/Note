@@ -25,11 +25,11 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-icp/footer.css">
                 
             
                 
@@ -446,10 +446,9 @@
             
 
             
-            <ul class="articles">
-                
+        </li>
     
-        <li class="chapter " data-level="2.5.1.1" data-path="../iOS/内购.html">
+        <li class="chapter " data-level="2.5.2" data-path="../iOS/内购.html">
             
                 <a href="../iOS/内购.html">
             
@@ -462,7 +461,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.5.1.2" data-path="../iOS/后台下载.html">
+        <li class="chapter " data-level="2.5.3" data-path="../iOS/后台下载.html">
             
                 <a href="../iOS/后台下载.html">
             
@@ -475,8 +474,16 @@
             
         </li>
     
+        <li class="chapter " data-level="2.5.4" data-path="../iOS/Xcode.html">
+            
+                <a href="../iOS/Xcode.html">
+            
+                    
+                    Xcode
+            
+                </a>
+            
 
-            </ul>
             
         </li>
     
@@ -743,12 +750,26 @@
     <li class="divider"></li>
 
     <li>
-        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+        <a href="https://www.gitbook.com" target="_blank" class="gitbook-link">
             Published with GitBook
         </a>
     </li>
-</ul>
 
+    
+    <li>
+        
+        
+        
+            
+        
+        
+            <a href="https://beian.miit.gov.cn/" target="_blank" class="gitbook-link">
+                粤ICP备2026025152号
+            </a>
+        
+    </li>
+    
+</ul>
 
                 </nav>
             
@@ -785,10 +806,10 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#swift-55-&#x5F15;&#x5165;&#x4E86;&#x65B0;&#x7684;&#x8BED;&#x6CD5;&#x548C;-api-&#x6765;&#x652F;&#x6301;&#x8FD9;&#x4E9B;&#x529F;&#x80FD;&#x3002;&#x5728;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x4E2D;&#xFF0C;&#x9664;&#x4E86;&#x4F7F;&#x7528;&#x6700;&#x65B0;&#x7684;-swift-&#x7248;&#x672C;&#x5916;&#xFF0C;&#x8FD8;&#x9700;&#x8981;&#x9488;&#x5BF9;&#x67D0;&#x4E9B;&#x5E73;&#x53F0;&#x7248;&#x672C;&#xFF1A;"><b>1.1. </b>Swift 5.5 &#x5F15;&#x5165;&#x4E86;&#x65B0;&#x7684;&#x8BED;&#x6CD5;&#x548C; API &#x6765;&#x652F;&#x6301;&#x8FD9;&#x4E9B;&#x529F;&#x80FD;&#x3002;&#x5728;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x4E2D;&#xFF0C;&#x9664;&#x4E86;&#x4F7F;&#x7528;&#x6700;&#x65B0;&#x7684; Swift &#x7248;&#x672C;&#x5916;&#xFF0C;&#x8FD8;&#x9700;&#x8981;&#x9488;&#x5BF9;&#x67D0;&#x4E9B;&#x5E73;&#x53F0;&#x7248;&#x672C;&#xFF1A;</a></li><li><span class="title-icon "></span><a href="#frameworkname-is-not-a-member-type-of-frameworkname-errors-inside-swiftinterface"><b>1.2. </b>&#x2018;FrameworkName&#x2019; is not a member type of &#x2018;FrameworkName&#x2019; errors inside swiftinterface</a></li><ul><li><span class="title-icon "></span><a href="#&#x53C2;&#x8003;"><b>1.2.1. </b>&#x53C2;&#x8003;</a></li></ul></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h2 id="swift-55-&#x5F15;&#x5165;&#x4E86;&#x65B0;&#x7684;&#x8BED;&#x6CD5;&#x548C;-api-&#x6765;&#x652F;&#x6301;&#x8FD9;&#x4E9B;&#x529F;&#x80FD;&#x3002;&#x5728;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x4E2D;&#xFF0C;&#x9664;&#x4E86;&#x4F7F;&#x7528;&#x6700;&#x65B0;&#x7684;-swift-&#x7248;&#x672C;&#x5916;&#xFF0C;&#x8FD8;&#x9700;&#x8981;&#x9488;&#x5BF9;&#x67D0;&#x4E9B;&#x5E73;&#x53F0;&#x7248;&#x672C;&#xFF1A;"><a name="swift-55-&#x5F15;&#x5165;&#x4E86;&#x65B0;&#x7684;&#x8BED;&#x6CD5;&#x548C;-api-&#x6765;&#x652F;&#x6301;&#x8FD9;&#x4E9B;&#x529F;&#x80FD;&#x3002;&#x5728;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x4E2D;&#xFF0C;&#x9664;&#x4E86;&#x4F7F;&#x7528;&#x6700;&#x65B0;&#x7684;-swift-&#x7248;&#x672C;&#x5916;&#xFF0C;&#x8FD8;&#x9700;&#x8981;&#x9488;&#x5BF9;&#x67D0;&#x4E9B;&#x5E73;&#x53F0;&#x7248;&#x672C;&#xFF1A;" class="anchor-navigation-ex-anchor" href="#swift-55-&#x5F15;&#x5165;&#x4E86;&#x65B0;&#x7684;&#x8BED;&#x6CD5;&#x548C;-api-&#x6765;&#x652F;&#x6301;&#x8FD9;&#x4E9B;&#x529F;&#x80FD;&#x3002;&#x5728;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x4E2D;&#xFF0C;&#x9664;&#x4E86;&#x4F7F;&#x7528;&#x6700;&#x65B0;&#x7684;-swift-&#x7248;&#x672C;&#x5916;&#xFF0C;&#x8FD8;&#x9700;&#x8981;&#x9488;&#x5BF9;&#x67D0;&#x4E9B;&#x5E73;&#x53F0;&#x7248;&#x672C;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. Swift 5.5 &#x5F15;&#x5165;&#x4E86;&#x65B0;&#x7684;&#x8BED;&#x6CD5;&#x548C; API &#x6765;&#x652F;&#x6301;&#x8FD9;&#x4E9B;&#x529F;&#x80FD;&#x3002;&#x5728;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x4E2D;&#xFF0C;&#x9664;&#x4E86;&#x4F7F;&#x7528;&#x6700;&#x65B0;&#x7684; Swift &#x7248;&#x672C;&#x5916;&#xFF0C;&#x8FD8;&#x9700;&#x8981;&#x9488;&#x5BF9;&#x67D0;&#x4E9B;&#x5E73;&#x53F0;&#x7248;&#x672C;&#xFF1A;</h2>
+                                <h2 id="swift-55-&#x5F15;&#x5165;&#x4E86;&#x65B0;&#x7684;&#x8BED;&#x6CD5;&#x548C;-api-&#x6765;&#x652F;&#x6301;&#x8FD9;&#x4E9B;&#x529F;&#x80FD;&#x3002;&#x5728;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x4E2D;&#xFF0C;&#x9664;&#x4E86;&#x4F7F;&#x7528;&#x6700;&#x65B0;&#x7684;-swift-&#x7248;&#x672C;&#x5916;&#xFF0C;&#x8FD8;&#x9700;&#x8981;&#x9488;&#x5BF9;&#x67D0;&#x4E9B;&#x5E73;&#x53F0;&#x7248;&#x672C;&#xFF1A;">Swift 5.5 &#x5F15;&#x5165;&#x4E86;&#x65B0;&#x7684;&#x8BED;&#x6CD5;&#x548C; API &#x6765;&#x652F;&#x6301;&#x8FD9;&#x4E9B;&#x529F;&#x80FD;&#x3002;&#x5728;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x4E2D;&#xFF0C;&#x9664;&#x4E86;&#x4F7F;&#x7528;&#x6700;&#x65B0;&#x7684; Swift &#x7248;&#x672C;&#x5916;&#xFF0C;&#x8FD8;&#x9700;&#x8981;&#x9488;&#x5BF9;&#x67D0;&#x4E9B;&#x5E73;&#x53F0;&#x7248;&#x672C;&#xFF1A;</h2>
 <p>&#x5982;&#x679C;&#x4F7F;&#x7528;&#x7684;&#x662F; Xcode 13.2 &#x6216;&#x66F4;&#x9AD8;&#x7248;&#x672C;&#xFF0C;&#x5B83;&#x4F1A;&#x5C06;&#x65B0;&#x7684;&#x5E76;&#x53D1;&#x8FD0;&#x884C;&#x65F6;&#x4E0E;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x6346;&#x7ED1;&#x5728;&#x4E00;&#x8D77;&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x53EF;&#x4EE5;&#x5C06; iOS 13 &#x548C; macOS 10.15 &#x4F5C;&#x4E3A;&#x6700;&#x4F4E;&#x7684;&#x652F;&#x6301;&#x7248;&#x672C;&#xFF08;&#x5BF9;&#x4E8E;&#x672C;&#x5730;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#xFF09;&#x3002;
 &#x5982;&#x679C;&#x4F7F;&#x7528;&#x7684;&#x662F; Xcode 13&#xFF0C;&#x4F46;&#x7248;&#x672C;&#x4F4E;&#x4E8E; 13.2&#xFF0C;&#x90A3;&#x4E48;&#x53EA;&#x80FD;&#x628A; iOS 15 &#x6216; macOS 12&#xFF08;&#x6216;&#x66F4;&#x9AD8;&#x7248;&#x672C;&#xFF09;&#x4F5C;&#x4E3A;&#x6700;&#x4F4E;&#x7684;&#x652F;&#x6301;&#x7248;&#x672C;&#x3002;</p>
-<h2 id="frameworkname-is-not-a-member-type-of-frameworkname-errors-inside-swiftinterface"><a name="frameworkname-is-not-a-member-type-of-frameworkname-errors-inside-swiftinterface" class="anchor-navigation-ex-anchor" href="#frameworkname-is-not-a-member-type-of-frameworkname-errors-inside-swiftinterface"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x2018;FrameworkName&#x2019; is not a member type of &#x2018;FrameworkName&#x2019; errors inside swiftinterface</h2>
+<h2 id="frameworkname-is-not-a-member-type-of-frameworkname-errors-inside-swiftinterface">&#x2018;FrameworkName&#x2019; is not a member type of &#x2018;FrameworkName&#x2019; errors inside swiftinterface</h2>
 <p>XCFramework &#x4E0B;&#x7C7B;&#x540D;&#x548C;&#x6A21;&#x5757;&#x540D;&#x91CD;&#x590D;&#x65F6;&#xFF0C;&#x62A5;&#x9519;&#x3002;&#x8FD9;&#x662F; xcframework &#x5DF2;&#x77E5;&#x95EE;&#x9898;&#xFF0C;&#x540E;&#x7EED; Apple &#x53EF;&#x80FD;&#x4F1A;&#x4FEE;&#x590D;&#x3002;</p>
 <p>&#x76EE;&#x524D;&#x5FEB;&#x901F;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF1A;</p>
 <ol>
@@ -798,12 +819,14 @@
 </li>
 <li>&#x6E05;&#x7406;&#x5DE5;&#x7A0B;&#xFF0C;&#x91CD;&#x65B0;&#x7F16;&#x8BD1;</li>
 </ol>
-<h3 id="&#x53C2;&#x8003;"><a name="&#x53C2;&#x8003;" class="anchor-navigation-ex-anchor" href="#&#x53C2;&#x8003;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1. &#x53C2;&#x8003;</h3>
+<h3 id="&#x53C2;&#x8003;">&#x53C2;&#x8003;</h3>
 <ul>
 <li><a href="https://forums.swift.org/t/frameworkname-is-not-a-member-type-of-frameworkname-errors-inside-swiftinterface/28962" target="_blank">https://forums.swift.org/t/frameworkname-is-not-a-member-type-of-frameworkname-errors-inside-swiftinterface/28962</a></li>
-<li><a href="https://stackoverflow.com/questions/34159442/x-is-not-a-member-type-of-y" target="_blank">https://stackoverflow.com/questions/34159442/x-is-not-a-member-type-of-y</a></li>
+<li><a href="https://stackoverflow.com/questions/34159442/x-is-not-a-member-type-of-y" target="_blank">https://stackoverflow.com/questions/34159442/x-is-not-a-member-type-of-y</a> </li>
 </ul>
-
+<footer class="page-footer">
+undefined<a href="https://beian.miit.gov.cn/" target="_blank">&#x7CA4;ICP&#x5907;2026025152&#x53F7;</a>
+</footer>
                                 
                                 </section>
                             
@@ -862,7 +885,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Swift Tips","categories":"Swift","description":"Swift Tips","level":"2.2.1","depth":2,"next":{"title":"Swift第三方库","level":"2.2.1.1","depth":3,"path":"Swift/Swift第三方库.md","ref":"Swift/Swift第三方库.md","articles":[]},"previous":{"title":"Swift","level":"2.2","depth":1,"path":"Swift/README.md","ref":"Swift/README.md","articles":[{"title":"Swift Tips","level":"2.2.1","depth":2,"path":"Swift/Swift-Tips.md","ref":"Swift/Swift-Tips.md","articles":[{"title":"Swift第三方库","level":"2.2.1.1","depth":3,"path":"Swift/Swift第三方库.md","ref":"Swift/Swift第三方库.md","articles":[]},{"title":"内存管理","level":"2.2.1.2","depth":3,"path":"Swift/Swift内存管理.md","ref":"Swift/Swift内存管理.md","articles":[]},{"title":"闭包","level":"2.2.1.3","depth":3,"path":"Swift/闭包.md","ref":"Swift/闭包.md","articles":[]},{"title":"字符串和字符","level":"2.2.1.4","depth":3,"path":"Swift/字符串和字符.md","ref":"Swift/字符串和字符.md","articles":[]},{"title":"Swift OC 混编","level":"2.2.1.5","depth":3,"path":"Swift/Swift-OC混编.md","ref":"Swift/Swift-OC混编.md","articles":[]}]}]},"dir":"ltr"},"config":{"plugins":["code","alerts","anchor-navigation-ex","search-plus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"showLevel":true,"showGoTop":true,"printLog":false,"multipleH":false,"multipleH1":true,"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false}},"alerts":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Note","gitbook":"*"},"file":{"path":"Swift/Swift-Tips.md","mtime":"2023-07-10T06:08:23.117Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-07-10T06:09:13.037Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Swift Tips","categories":"Swift","description":"Swift Tips","level":"2.2.1","depth":2,"next":{"title":"Swift第三方库","level":"2.2.1.1","depth":3,"path":"Swift/Swift第三方库.md","ref":"Swift/Swift第三方库.md","articles":[]},"previous":{"title":"Swift","level":"2.2","depth":1,"path":"Swift/README.md","ref":"Swift/README.md","articles":[{"title":"Swift Tips","level":"2.2.1","depth":2,"path":"Swift/Swift-Tips.md","ref":"Swift/Swift-Tips.md","articles":[{"title":"Swift第三方库","level":"2.2.1.1","depth":3,"path":"Swift/Swift第三方库.md","ref":"Swift/Swift第三方库.md","articles":[]},{"title":"内存管理","level":"2.2.1.2","depth":3,"path":"Swift/Swift内存管理.md","ref":"Swift/Swift内存管理.md","articles":[]},{"title":"闭包","level":"2.2.1.3","depth":3,"path":"Swift/闭包.md","ref":"Swift/闭包.md","articles":[]},{"title":"字符串和字符","level":"2.2.1.4","depth":3,"path":"Swift/字符串和字符.md","ref":"Swift/字符串和字符.md","articles":[]},{"title":"Swift OC 混编","level":"2.2.1.5","depth":3,"path":"Swift/Swift-OC混编.md","ref":"Swift/Swift-OC混编.md","articles":[]}]}]},"dir":"ltr"},"config":{"plugins":["code","alerts","search-plus","icp"],"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"multipleH":false},"icp":{"link":"https://beian.miit.gov.cn/","style":{},"number":"粤ICP备2026025152号"},"alerts":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Note","gitbook":"*"},"file":{"path":"Swift/Swift-Tips.md","mtime":"2026-03-16T11:56:33.463Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2026-03-16T11:57:02.937Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

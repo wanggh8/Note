@@ -25,11 +25,11 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-icp/footer.css">
                 
             
                 
@@ -446,10 +446,9 @@
             
 
             
-            <ul class="articles">
-                
+        </li>
     
-        <li class="chapter " data-level="2.5.1.1" data-path="../iOS/内购.html">
+        <li class="chapter " data-level="2.5.2" data-path="../iOS/内购.html">
             
                 <a href="../iOS/内购.html">
             
@@ -462,7 +461,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.5.1.2" data-path="../iOS/后台下载.html">
+        <li class="chapter " data-level="2.5.3" data-path="../iOS/后台下载.html">
             
                 <a href="../iOS/后台下载.html">
             
@@ -475,8 +474,16 @@
             
         </li>
     
+        <li class="chapter " data-level="2.5.4" data-path="../iOS/Xcode.html">
+            
+                <a href="../iOS/Xcode.html">
+            
+                    
+                    Xcode
+            
+                </a>
+            
 
-            </ul>
             
         </li>
     
@@ -743,12 +750,26 @@
     <li class="divider"></li>
 
     <li>
-        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+        <a href="https://www.gitbook.com" target="_blank" class="gitbook-link">
             Published with GitBook
         </a>
     </li>
-</ul>
 
+    
+    <li>
+        
+        
+        
+            
+        
+        
+            <a href="https://beian.miit.gov.cn/" target="_blank" class="gitbook-link">
+                粤ICP备2026025152号
+            </a>
+        
+    </li>
+    
+</ul>
 
                 </nav>
             
@@ -785,8 +806,8 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#nswindow"><b>1.1. </b>NSWindow</a></li><li><span class="title-icon "></span><a href="#nsviewcontroller"><b>1.2. </b>NSViewController</a></li><li><span class="title-icon "></span><a href="#nsview"><b>1.3. </b>NSView</a></li><li><span class="title-icon "></span><a href="#nscollectionview"><b>1.4. </b>NSCollectionView</a></li></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h2 id="nswindow"><a name="nswindow" class="anchor-navigation-ex-anchor" href="#nswindow"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. NSWindow</h2>
-<h2 id="nsviewcontroller"><a name="nsviewcontroller" class="anchor-navigation-ex-anchor" href="#nsviewcontroller"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. NSViewController</h2>
+                                <h2 id="nswindow">NSWindow</h2>
+<h2 id="nsviewcontroller">NSViewController</h2>
 <p>&#x5728; macOS 10.10 &#x53CA;&#x66F4;&#x9AD8;&#x7248;&#x672C;&#x4E2D;&#xFF0C;NSViewController &#x4F7F;&#x7528;&#x521D;&#x59CB;&#x5316;&#x65B9;&#x6CD5; <code>[[MyViewController alloc] init]</code> &#x65F6;&#xFF0C;&#x8C03;&#x7528; <code>loadView</code> &#x5C06;&#x52A0;&#x8F7D;&#x4E0E; NSViewController &#x540C;&#x540D;&#x7684; Nib &#x6587;&#x4EF6;&#xFF0C;&#x5C06; Nib &#x6587;&#x4EF6;&#x5B9E;&#x4F8B;&#x5316;&#x89C6;&#x56FE;&#x8FDE;&#x63A5;&#x5230;&#x89C6;&#x56FE;&#x63A7;&#x5236;&#x5668;&#x7684;&#x89C6;&#x56FE;&#x5C5E;&#x6027;&#x3002;&#x5982;&#x679C;&#x4E0D;&#x5B58;&#x5728; Nib &#x6587;&#x4EF6;&#xFF0C;&#x4F1A;&#x89E6;&#x53D1;&#x8FD0;&#x884C;&#x65F6;&#x5D29;&#x6E83;&#xFF1A;</p>
 <pre><code>-[NSNib _initWithNibNamed:bundle:options:] could not load the nibName: NSViewController in bundle (null).
 </code></pre><p>&#x89E3;&#x51B3;&#x529E;&#x6CD5;&#xFF1A;&#x91CD;&#x5199; <code>loadView</code> &#x65B9;&#x6CD5;</p>
@@ -794,7 +815,7 @@
 
 }
 </code></pre>
-<h2 id="nsview"><a name="nsview" class="anchor-navigation-ex-anchor" href="#nsview"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. NSView</h2>
+<h2 id="nsview">NSView</h2>
 <p>&#x5728; macOS 10.10 &#x53CA;&#x66F4;&#x9AD8;&#x7248;&#x672C;&#x4E2D;&#xFF0C;NSView &#x4F7F;&#x7528;&#x521D;&#x59CB;&#x5316;&#x65B9;&#x6CD5;&#x65F6;&#xFF0C;&#x8C03;&#x7528; <code>loadView</code> &#x5C06;&#x52A0;&#x8F7D;&#x4E0E; NSView &#x540C;&#x540D;&#x7684; Nib &#x6587;&#x4EF6;&#xFF0C;&#x5C06; Nib &#x6587;&#x4EF6;&#x5B9E;&#x4F8B;&#x5316;&#x89C6;&#x56FE;&#x8FDE;&#x63A5;&#x5230;&#x89C6;&#x56FE;&#x63A7;&#x5236;&#x5668;&#x7684;&#x89C6;&#x56FE;&#x5C5E;&#x6027;&#x3002;&#x5982;&#x679C;&#x4E0D;&#x5B58;&#x5728; Nib &#x6587;&#x4EF6;&#xFF0C;&#x4F1A;&#x89E6;&#x53D1;&#x8FD0;&#x884C;&#x65F6;&#x5D29;&#x6E83;&#xFF1A;</p>
 <pre><code>-[NSNib _initWithNibNamed:bundle:options:] could not load the nibName: NSView in bundle (null).
 </code></pre><p>&#x89E3;&#x51B3;&#x529E;&#x6CD5;&#xFF1A;&#x91CD;&#x5199; <code>loadView</code> &#x65B9;&#x6CD5;</p>
@@ -802,7 +823,7 @@
 
 }
 </code></pre>
-<h2 id="nscollectionview"><a name="nscollectionview" class="anchor-navigation-ex-anchor" href="#nscollectionview"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. NSCollectionView</h2>
+<h2 id="nscollectionview">NSCollectionView</h2>
 <p>&#x5728;&#x4F4E;&#x7248;&#x672C;&#x7CFB;&#x7EDF;&#x4E0B;&#xFF0C;<code>NSCollectionView</code> &#x5FC5;&#x987B;&#x5D4C;&#x5957;&#x5728; <code>NSScrollView</code> &#x4E2D;&#xFF0C;&#x5426;&#x5219; <code>dataSource</code> &#x4E2D;&#x7684; <code>func collectionView(_ collectionView: NSCollectionView, itemForRepresentedObjectAt indexPath: IndexPath) -&gt; NSCollectionViewItem</code> &#x56DE;&#x8C03;&#x4E0D;&#x4F1A;&#x6267;&#x884C;&#x3002;</p>
 <p>&#x5B9E;&#x4F8B;&#x4EE3;&#x7801;: </p>
 <pre><code class="lang-swift"><span class="hljs-built_in">lazy</span> <span class="hljs-keyword">var</span> flowLayout: <span class="hljs-type">NSCollectionViewFlowLayout</span> = {
@@ -836,7 +857,9 @@
     <span class="hljs-keyword">return</span> scrollView
 }()
 </code></pre>
-
+<footer class="page-footer">
+undefined<a href="https://beian.miit.gov.cn/" target="_blank">&#x7CA4;ICP&#x5907;2026025152&#x53F7;</a>
+</footer>
                                 
                                 </section>
                             
@@ -895,7 +918,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"AppKit","description":"macOS Appkit","typora-root-url":"../","level":"2.6.2","depth":2,"next":{"title":"Mac","level":"3.1","depth":1,"path":"Mac/README.md","ref":"Mac/README.md","articles":[{"title":"Mac终端zsh忽略大小写","level":"3.1.1","depth":2,"path":"Mac/Mac终端zsh忽略大小写.md","ref":"Mac/Mac终端zsh忽略大小写.md","articles":[]},{"title":"Mac键盘快捷键","level":"3.1.2","depth":2,"path":"Mac/Mac键盘快捷键.md","ref":"Mac/Mac键盘快捷键.md","articles":[]},{"title":"Mac开源软件","level":"3.1.3","depth":2,"path":"Mac/Mac开源软件.md","ref":"Mac/Mac开源软件.md","articles":[]},{"title":"FRP客户端配置","level":"3.1.4","depth":2,"path":"Mac/FRP客户端配置.md","ref":"Mac/FRP客户端配置.md","articles":[]},{"title":"Markdown","level":"3.1.5","depth":2,"path":"Mac/Markdown.md","ref":"Mac/Markdown.md","articles":[]},{"title":"zsh","level":"3.1.6","depth":2,"path":"Mac/zsh.md","ref":"Mac/zsh.md","articles":[]},{"title":"Homebrew","level":"3.1.7","depth":2,"path":"Mac/Homebrew.md","ref":"Mac/Homebrew.md","articles":[]},{"title":"Xcode","level":"3.1.8","depth":2,"path":"Mac/Xcode.md","ref":"Mac/Xcode.md","articles":[]}]},"previous":{"title":"App Sandbox","level":"2.6.1","depth":2,"path":"macOS/App-Sandbox.md","ref":"macOS/App-Sandbox.md","articles":[]},"dir":"ltr"},"config":{"plugins":["code","alerts","anchor-navigation-ex","search-plus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"showLevel":true,"showGoTop":true,"printLog":false,"multipleH":false,"multipleH1":true,"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false}},"alerts":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Note","gitbook":"*"},"file":{"path":"macOS/AppKit.md","mtime":"2023-07-10T06:08:23.321Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-07-10T06:09:13.037Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"AppKit","description":"macOS Appkit","typora-root-url":"../","level":"2.6.2","depth":2,"next":{"title":"Mac","level":"3.1","depth":1,"path":"Mac/README.md","ref":"Mac/README.md","articles":[{"title":"Mac终端zsh忽略大小写","level":"3.1.1","depth":2,"path":"Mac/Mac终端zsh忽略大小写.md","ref":"Mac/Mac终端zsh忽略大小写.md","articles":[]},{"title":"Mac键盘快捷键","level":"3.1.2","depth":2,"path":"Mac/Mac键盘快捷键.md","ref":"Mac/Mac键盘快捷键.md","articles":[]},{"title":"Mac开源软件","level":"3.1.3","depth":2,"path":"Mac/Mac开源软件.md","ref":"Mac/Mac开源软件.md","articles":[]},{"title":"FRP客户端配置","level":"3.1.4","depth":2,"path":"Mac/FRP客户端配置.md","ref":"Mac/FRP客户端配置.md","articles":[]},{"title":"Markdown","level":"3.1.5","depth":2,"path":"Mac/Markdown.md","ref":"Mac/Markdown.md","articles":[]},{"title":"zsh","level":"3.1.6","depth":2,"path":"Mac/zsh.md","ref":"Mac/zsh.md","articles":[]},{"title":"Homebrew","level":"3.1.7","depth":2,"path":"Mac/Homebrew.md","ref":"Mac/Homebrew.md","articles":[]},{"title":"Xcode","level":"3.1.8","depth":2,"path":"Mac/Xcode.md","ref":"Mac/Xcode.md","articles":[]}]},"previous":{"title":"App Sandbox","level":"2.6.1","depth":2,"path":"macOS/App-Sandbox.md","ref":"macOS/App-Sandbox.md","articles":[]},"dir":"ltr"},"config":{"plugins":["code","alerts","search-plus","icp"],"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"multipleH":false},"icp":{"link":"https://beian.miit.gov.cn/","style":{},"number":"粤ICP备2026025152号"},"alerts":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Note","gitbook":"*"},"file":{"path":"macOS/AppKit.md","mtime":"2026-03-16T11:56:33.604Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2026-03-16T11:57:02.937Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

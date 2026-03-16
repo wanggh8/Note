@@ -3,8 +3,8 @@
   "plugins": [
     "code",
     "alerts",
-    "anchor-navigation-ex",
-    "search-plus"
+    "search-plus",
+    "icp"
   ],
   "pluginsConfig": {
     "code": {
@@ -12,6 +12,9 @@
     },
     "anchor-navigation-ex": {
       "multipleH": false
+    },
+    "icp": {
+      "number": "粤ICP备2026025152号"
     }
   }
 }

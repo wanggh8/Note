@@ -25,11 +25,11 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-icp/footer.css">
                 
             
                 
@@ -446,10 +446,9 @@
             
 
             
-            <ul class="articles">
-                
+        </li>
     
-        <li class="chapter " data-level="2.5.1.1" data-path="../iOS/内购.html">
+        <li class="chapter " data-level="2.5.2" data-path="../iOS/内购.html">
             
                 <a href="../iOS/内购.html">
             
@@ -462,7 +461,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.5.1.2" data-path="../iOS/后台下载.html">
+        <li class="chapter " data-level="2.5.3" data-path="../iOS/后台下载.html">
             
                 <a href="../iOS/后台下载.html">
             
@@ -475,8 +474,16 @@
             
         </li>
     
+        <li class="chapter " data-level="2.5.4" data-path="../iOS/Xcode.html">
+            
+                <a href="../iOS/Xcode.html">
+            
+                    
+                    Xcode
+            
+                </a>
+            
 
-            </ul>
             
         </li>
     
@@ -743,12 +750,26 @@
     <li class="divider"></li>
 
     <li>
-        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+        <a href="https://www.gitbook.com" target="_blank" class="gitbook-link">
             Published with GitBook
         </a>
     </li>
-</ul>
 
+    
+    <li>
+        
+        
+        
+            
+        
+        
+            <a href="https://beian.miit.gov.cn/" target="_blank" class="gitbook-link">
+                粤ICP备2026025152号
+            </a>
+        
+    </li>
+    
+</ul>
 
                 </nav>
             
@@ -785,13 +806,13 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#&#x9519;&#x8BEF;&#x5904;&#x7406;"><b>1.1. </b>&#x9519;&#x8BEF;&#x5904;&#x7406;</a></li><ul><li><span class="title-icon "></span><a href="#this-applications-application-identifier-entitlement-does-not-match-that-of-the-installed-application-these-values-must-match-for-an-upgrade-to-be-allowed"><b>1.1.1. </b>This application&apos;s application-identifier entitlement does not match that of the installed application. These values must match for an upgrade to be allowed</a></li></ul><li><span class="title-icon "></span><a href="#&#x67E5;&#x770B;-ipa-entitlements"><b>1.2. </b>&#x67E5;&#x770B; iPA entitlements</a></li><li><span class="title-icon "></span><a href="#xcode-build"><b>1.3. </b>Xcode Build</a></li><li><span class="title-icon "></span><a href="#lldb"><b>1.4. </b>LLDB</a></li><ul><li><span class="title-icon "></span><a href="#&#x547D;&#x4EE4;"><b>1.4.1. </b>&#x547D;&#x4EE4;</a></li><li><span class="title-icon "></span><a href="#&#x53C2;&#x8003;"><b>1.4.2. </b>&#x53C2;&#x8003;</a></li></ul></ul></ul></div><a href="#" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h2 id="&#x9519;&#x8BEF;&#x5904;&#x7406;"><a name="&#x9519;&#x8BEF;&#x5904;&#x7406;" class="anchor-navigation-ex-anchor" href="#&#x9519;&#x8BEF;&#x5904;&#x7406;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x9519;&#x8BEF;&#x5904;&#x7406;</h2>
-<h3 id="this-applications-application-identifier-entitlement-does-not-match-that-of-the-installed-application-these-values-must-match-for-an-upgrade-to-be-allowed"><a name="this-applications-application-identifier-entitlement-does-not-match-that-of-the-installed-application-these-values-must-match-for-an-upgrade-to-be-allowed" class="anchor-navigation-ex-anchor" href="#this-applications-application-identifier-entitlement-does-not-match-that-of-the-installed-application-these-values-must-match-for-an-upgrade-to-be-allowed"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.1. This application&apos;s application-identifier entitlement does not match that of the installed application. These values must match for an upgrade to be allowed</h3>
+                                <h2 id="&#x9519;&#x8BEF;&#x5904;&#x7406;">&#x9519;&#x8BEF;&#x5904;&#x7406;</h2>
+<h3 id="this-applications-application-identifier-entitlement-does-not-match-that-of-the-installed-application-these-values-must-match-for-an-upgrade-to-be-allowed">This application&apos;s application-identifier entitlement does not match that of the installed application. These values must match for an upgrade to be allowed</h3>
 <p>&#x539F;&#x56E0;&#xFF1A;&#x8FD9;&#x4E2A;&#x9879;&#x76EE;App&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x8FD9;&#x4E2A;&#x771F;&#x673A;&#x4E0A;&#x4E86;&#xFF0C;&#x8FD9;&#x4E2A;App&#x662F;&#x65E7;&#x7684;identifier&#x8FD0;&#x884C;&#x7684;&#x3002;</p>
 <p>&#x89E3;&#x51B3;&#x65B9;&#x6CD5;&#xFF1A;Xcode ---&gt;Window ---&gt; Devices ---&gt; &#x81EA;&#x5DF1;&#x7684;&#x771F;&#x673A; ---&gt; installed Apps ----&gt; &#x5220;&#x9664;&#x8FD9;&#x4E2A;App  ----&gt; &#x91CD;&#x65B0;&#x8FD0;&#x884C;</p>
-<h2 id="&#x67E5;&#x770B;-ipa-entitlements"><a name="&#x67E5;&#x770B;-ipa-entitlements" class="anchor-navigation-ex-anchor" href="#&#x67E5;&#x770B;-ipa-entitlements"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x67E5;&#x770B; iPA entitlements</h2>
+<h2 id="&#x67E5;&#x770B;-ipa-entitlements">&#x67E5;&#x770B; iPA entitlements</h2>
 <p><code>codesign -d Demo_netease2.app  --entitlements -</code></p>
-<h2 id="xcode-build"><a name="xcode-build" class="anchor-navigation-ex-anchor" href="#xcode-build"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. Xcode Build</h2>
+<h2 id="xcode-build">Xcode Build</h2>
 <p><a href="https://help.apple.com/xcode/mac/current/#/itcaec37c2a6" target="_blank">https://help.apple.com/xcode/mac/current/#/itcaec37c2a6</a></p>
 <p><a href="https://mp.weixin.qq.com/s/jF6mTsxC2xtn8Xp1Mn72Zw" target="_blank">Xcode &#x5E38;&#x89C1; CLI &#x5DE5;&#x5177;</a></p>
 <p>Create an archive of the framework or library for each platform you wish to support by entering one xcodebuild command for each platform&#x2019;s generic run destination. To build a macOS variant of your framework built for UIKit, pass Mac Catalyst as the variant argument.</p>
@@ -802,16 +823,18 @@
 
 xcodebuild -create-xcframework -library &lt;path&gt; [-headers &lt;path&gt;] [-library &lt;path&gt; [-headers &lt;path&gt;]...] -output &lt;path&gt;
 </code></pre>
-<h2 id="lldb"><a name="lldb" class="anchor-navigation-ex-anchor" href="#lldb"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. LLDB</h2>
-<h3 id="&#x547D;&#x4EE4;"><a name="&#x547D;&#x4EE4;" class="anchor-navigation-ex-anchor" href="#&#x547D;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.1. &#x547D;&#x4EE4;</h3>
-<h4 id="bt"><a name="bt" class="anchor-navigation-ex-anchor" href="#bt"><i class="fa fa-link" aria-hidden="true"></i></a>bt</h4>
-<h4 id="tb"><a name="tb" class="anchor-navigation-ex-anchor" href="#tb"><i class="fa fa-link" aria-hidden="true"></i></a>tb</h4>
-<h4 id="po"><a name="po" class="anchor-navigation-ex-anchor" href="#po"><i class="fa fa-link" aria-hidden="true"></i></a>po</h4>
-<h3 id="&#x53C2;&#x8003;"><a name="&#x53C2;&#x8003;" class="anchor-navigation-ex-anchor" href="#&#x53C2;&#x8003;"><i class="fa fa-link" aria-hidden="true"></i></a>1.4.2. &#x53C2;&#x8003;</h3>
+<h2 id="lldb">LLDB</h2>
+<h3 id="&#x547D;&#x4EE4;">&#x547D;&#x4EE4;</h3>
+<h4 id="bt">bt</h4>
+<h4 id="tb">tb</h4>
+<h4 id="po">po</h4>
+<h3 id="&#x53C2;&#x8003;">&#x53C2;&#x8003;</h3>
 <ul>
-<li><a href="http://southpeak.github.io/2015/01/25/tool-lldb/" target="_blank">http://southpeak.github.io/2015/01/25/tool-lldb/</a></li>
+<li><a href="http://southpeak.github.io/2015/01/25/tool-lldb/" target="_blank">http://southpeak.github.io/2015/01/25/tool-lldb/</a> </li>
 </ul>
-
+<footer class="page-footer">
+undefined<a href="https://beian.miit.gov.cn/" target="_blank">&#x7CA4;ICP&#x5907;2026025152&#x53F7;</a>
+</footer>
                                 
                                 </section>
                             
@@ -870,7 +893,7 @@ xcodebuild -create-xcframework -library &lt;path&gt; [-headers &lt;path&gt;] [-l
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Xcode","categories":"Mac","description":"Xcode 相关","cover":"/images/MacOS.jpg","level":"3.1.8","depth":2,"next":{"title":"Linux","level":"3.2","depth":1,"path":"Linux/README.md","ref":"Linux/README.md","articles":[{"title":"WSL","level":"3.2.1","depth":2,"path":"Linux/WSL.md","ref":"Linux/WSL.md","articles":[]}]},"previous":{"title":"Homebrew","level":"3.1.7","depth":2,"path":"Mac/Homebrew.md","ref":"Mac/Homebrew.md","articles":[]},"dir":"ltr"},"config":{"plugins":["code","alerts","anchor-navigation-ex","search-plus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"showLevel":true,"showGoTop":true,"printLog":false,"multipleH":false,"multipleH1":true,"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false}},"alerts":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Note","gitbook":"*"},"file":{"path":"Mac/Xcode.md","mtime":"2023-07-10T06:08:23.113Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-07-10T06:09:13.037Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Xcode","categories":"Mac","description":"Xcode 相关","cover":"/images/MacOS.jpg","level":"3.1.8","depth":2,"next":{"title":"Linux","level":"3.2","depth":1,"path":"Linux/README.md","ref":"Linux/README.md","articles":[{"title":"WSL","level":"3.2.1","depth":2,"path":"Linux/WSL.md","ref":"Linux/WSL.md","articles":[]}]},"previous":{"title":"Homebrew","level":"3.1.7","depth":2,"path":"Mac/Homebrew.md","ref":"Mac/Homebrew.md","articles":[]},"dir":"ltr"},"config":{"plugins":["code","alerts","search-plus","icp"],"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"multipleH":false},"icp":{"link":"https://beian.miit.gov.cn/","style":{},"number":"粤ICP备2026025152号"},"alerts":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Note","gitbook":"*"},"file":{"path":"Mac/Xcode.md","mtime":"2026-03-16T11:56:33.462Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2026-03-16T11:57:02.937Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

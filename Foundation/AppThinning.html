@@ -25,11 +25,11 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-icp/footer.css">
                 
             
                 
@@ -446,10 +446,9 @@
             
 
             
-            <ul class="articles">
-                
+        </li>
     
-        <li class="chapter " data-level="2.5.1.1" data-path="../iOS/内购.html">
+        <li class="chapter " data-level="2.5.2" data-path="../iOS/内购.html">
             
                 <a href="../iOS/内购.html">
             
@@ -462,7 +461,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.5.1.2" data-path="../iOS/后台下载.html">
+        <li class="chapter " data-level="2.5.3" data-path="../iOS/后台下载.html">
             
                 <a href="../iOS/后台下载.html">
             
@@ -475,8 +474,16 @@
             
         </li>
     
+        <li class="chapter " data-level="2.5.4" data-path="../iOS/Xcode.html">
+            
+                <a href="../iOS/Xcode.html">
+            
+                    
+                    Xcode
+            
+                </a>
+            
 
-            </ul>
             
         </li>
     
@@ -743,12 +750,26 @@
     <li class="divider"></li>
 
     <li>
-        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+        <a href="https://www.gitbook.com" target="_blank" class="gitbook-link">
             Published with GitBook
         </a>
     </li>
-</ul>
 
+    
+    <li>
+        
+        
+        
+            
+        
+        
+            <a href="https://beian.miit.gov.cn/" target="_blank" class="gitbook-link">
+                粤ICP备2026025152号
+            </a>
+        
+    </li>
+    
+</ul>
 
                 </nav>
             
@@ -785,41 +806,41 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#app-thinning"><b>1. </b>App Thinning</a></li><ul><li><span class="title-icon "></span><a href="#&#x6307;&#x4EE4;&#x96C6;&#x67B6;&#x6784;"><b>1.1. </b>&#x6307;&#x4EE4;&#x96C6;&#x67B6;&#x6784;</a></li><ul><li><span class="title-icon "></span><a href="#ios-&#x8BBE;&#x5907;&#x652F;&#x6301;&#x7684;&#x6307;&#x4EE4;&#x96C6;"><b>1.1.1. </b>iOS &#x8BBE;&#x5907;&#x652F;&#x6301;&#x7684;&#x6307;&#x4EE4;&#x96C6;</a></li><li><span class="title-icon "></span><a href="#macos-&#x8BBE;&#x5907;&#x652F;&#x6301;&#x7684;&#x6307;&#x4EE4;&#x96C6;&#x3000;"><b>1.1.2. </b>macOS &#x8BBE;&#x5907;&#x652F;&#x6301;&#x7684;&#x6307;&#x4EE4;&#x96C6;&#x3000;</a></li><li><span class="title-icon "></span><a href="#architectures"><b>1.1.3. </b>Architectures</a></li><li><span class="title-icon "></span><a href="#valid-architectures&#x3000;&#x3000;"><b>1.1.4. </b>Valid Architectures&#x3000;&#x3000;</a></li><li><span class="title-icon "></span><a href="#build-active-architecture-only"><b>1.1.5. </b>Build Active Architecture Only:</a></li><li><span class="title-icon "></span><a href="#&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#x5927;&#x5C0F;&#x9650;&#x5236;"><b>1.1.6. </b>&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#x5927;&#x5C0F;&#x9650;&#x5236;</a></li></ul><li><span class="title-icon "></span><a href="#swift"><b>1.2. </b>Swift</a></li><ul><li><span class="title-icon "></span><a href="#swift-&#x6807;&#x51C6;&#x5E93;"><b>1.2.1. </b>Swift &#x6807;&#x51C6;&#x5E93;</a></li></ul><li><span class="title-icon "></span><a href="#&#x53C2;&#x8003;"><b>1.3. </b>&#x53C2;&#x8003;</a></li></ul></ul></div><a href="#app-thinning" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="app-thinning"><a name="app-thinning" class="anchor-navigation-ex-anchor" href="#app-thinning"><i class="fa fa-link" aria-hidden="true"></i></a>1. App Thinning</h1>
+                                <h1 id="app-thinning">App Thinning</h1>
 <p>&#x5305;&#x4F53;&#x79EF;&#x5927;&#x5C0F;&#x4F18;&#x5316;</p>
-<h2 id="&#x6307;&#x4EE4;&#x96C6;&#x67B6;&#x6784;"><a name="&#x6307;&#x4EE4;&#x96C6;&#x67B6;&#x6784;" class="anchor-navigation-ex-anchor" href="#&#x6307;&#x4EE4;&#x96C6;&#x67B6;&#x6784;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x6307;&#x4EE4;&#x96C6;&#x67B6;&#x6784;</h2>
-<h3 id="ios-&#x8BBE;&#x5907;&#x652F;&#x6301;&#x7684;&#x6307;&#x4EE4;&#x96C6;"><a name="ios-&#x8BBE;&#x5907;&#x652F;&#x6301;&#x7684;&#x6307;&#x4EE4;&#x96C6;" class="anchor-navigation-ex-anchor" href="#ios-&#x8BBE;&#x5907;&#x652F;&#x6301;&#x7684;&#x6307;&#x4EE4;&#x96C6;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.1. iOS &#x8BBE;&#x5907;&#x652F;&#x6301;&#x7684;&#x6307;&#x4EE4;&#x96C6;</h3>
-<h4 id="armv6"><a name="armv6" class="anchor-navigation-ex-anchor" href="#armv6"><i class="fa fa-link" aria-hidden="true"></i></a>armv6:</h4>
+<h2 id="&#x6307;&#x4EE4;&#x96C6;&#x67B6;&#x6784;">&#x6307;&#x4EE4;&#x96C6;&#x67B6;&#x6784;</h2>
+<h3 id="ios-&#x8BBE;&#x5907;&#x652F;&#x6301;&#x7684;&#x6307;&#x4EE4;&#x96C6;">iOS &#x8BBE;&#x5907;&#x652F;&#x6301;&#x7684;&#x6307;&#x4EE4;&#x96C6;</h3>
+<h4 id="armv6">armv6:</h4>
 <p>&#x3000;&#x3000;iPhone, iPhone 3G, iPod 1G/2G</p>
-<h4 id="armv7"><a name="armv7" class="anchor-navigation-ex-anchor" href="#armv7"><i class="fa fa-link" aria-hidden="true"></i></a>armv7:</h4>
+<h4 id="armv7">armv7:</h4>
 <p>&#x3000;&#x3000;iPhone 3GS, iPhone 4, iPhone 4S, iPod 3G/4G/5G, iPad, iPad 2, iPad 3, iPad Mini</p>
-<h4 id="armv7s&#xFF1A;"><a name="armv7s&#xFF1A;" class="anchor-navigation-ex-anchor" href="#armv7s&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>armv7s&#xFF1A;</h4>
+<h4 id="armv7s&#xFF1A;">armv7s&#xFF1A;</h4>
 <p>&#x3000;&#x3000; iPhone 5, iPhone 5c, iPad 4</p>
-<h4 id="arm64"><a name="arm64" class="anchor-navigation-ex-anchor" href="#arm64"><i class="fa fa-link" aria-hidden="true"></i></a>arm64:</h4>
+<h4 id="arm64">arm64:</h4>
 <p>&#x3000;&#x3000;iPhone X&#xFF0C;iPhone 8(Plus)&#xFF0C;iPhone 7(Plus)&#xFF0C;iPhone 6(Plus)&#xFF0C;iPhone 6s(Plus), iPhone 5s, iPad Air(2), Retina iPad Mini(2,3)</p>
-<h4 id="arm64e"><a name="arm64e" class="anchor-navigation-ex-anchor" href="#arm64e"><i class="fa fa-link" aria-hidden="true"></i></a>arm64e:</h4>
+<h4 id="arm64e">arm64e:</h4>
 <p>&#x3000;&#x3000;iPhone XS\XR\XS Max
 &#x3000;&#x3000;</p>
-<h3 id="macos-&#x8BBE;&#x5907;&#x652F;&#x6301;&#x7684;&#x6307;&#x4EE4;&#x96C6;&#x3000;"><a name="macos-&#x8BBE;&#x5907;&#x652F;&#x6301;&#x7684;&#x6307;&#x4EE4;&#x96C6;&#x3000;" class="anchor-navigation-ex-anchor" href="#macos-&#x8BBE;&#x5907;&#x652F;&#x6301;&#x7684;&#x6307;&#x4EE4;&#x96C6;&#x3000;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.2. macOS &#x8BBE;&#x5907;&#x652F;&#x6301;&#x7684;&#x6307;&#x4EE4;&#x96C6;&#x3000;</h3>
+<h3 id="macos-&#x8BBE;&#x5907;&#x652F;&#x6301;&#x7684;&#x6307;&#x4EE4;&#x96C6;&#x3000;">macOS &#x8BBE;&#x5907;&#x652F;&#x6301;&#x7684;&#x6307;&#x4EE4;&#x96C6;&#x3000;</h3>
 <p>x86_64 &#x548C; arm64</p>
-<h3 id="architectures"><a name="architectures" class="anchor-navigation-ex-anchor" href="#architectures"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.3. Architectures</h3>
+<h3 id="architectures">Architectures</h3>
 <p>&#x6307;&#x5B9A;&#x5DE5;&#x7A0B;&#x88AB;&#x7F16;&#x8BD1;&#x6210;&#x652F;&#x6301;&#x54EA;&#x4E9B;&#x6307;&#x4EE4;&#x96C6;&#x7C7B;&#x578B;&#xFF0C;&#x800C;&#x652F;&#x6301;&#x7684;&#x6307;&#x4EE4;&#x96C6;&#x8D8A;&#x591A;&#xFF0C;&#x5C31;&#x4F1A;&#x7F16;&#x8BD1;&#x51FA;&#x5F88;&#x591A;&#x4E2A;&#x6307;&#x4EE4;&#x96C6;&#x4EE3;&#x7801;&#x7684;&#x6570;&#x636E;&#x5305;&#xFF0C;&#x5BF9;&#x5E94;&#x751F;&#x6210;&#x4E8C;&#x8FDB;&#x5236;&#x5305;&#x5C31;&#x8D8A;&#x5927;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;ipa&#x5305;&#x8D8A;&#x5927;&#x3002;&#x3000;</p>
-<h3 id="valid-architectures&#x3000;&#x3000;"><a name="valid-architectures&#x3000;&#x3000;" class="anchor-navigation-ex-anchor" href="#valid-architectures&#x3000;&#x3000;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.4. Valid Architectures&#x3000;&#x3000;</h3>
+<h3 id="valid-architectures&#x3000;&#x3000;">Valid Architectures&#x3000;&#x3000;</h3>
 <p>&#x8BE5;&#x7F16;&#x8BD1;&#x9879;&#x6307;&#x5B9A;&#x53EF;&#x80FD;&#x652F;&#x6301;&#x7684;&#x6307;&#x4EE4;&#x96C6;&#xFF0C;&#x8BE5;&#x5217;&#x8868;&#x548C;Architectures&#x5217;&#x8868;&#x7684;&#x4EA4;&#x96C6;&#xFF0C;&#x5C06;&#x662F;Xcode&#x6700;&#x7EC8;&#x751F;&#x6210;&#x4E8C;&#x8FDB;&#x5236;&#x5305;&#x6240;&#x652F;&#x6301;&#x7684;&#x6307;&#x4EE4;&#x96C6;&#x3002;</p>
 <p>&#x3000;&#x3000;&#x6BD4;&#x5982;&#xFF0C;&#x4F60;&#x7684;Valid Architectures&#x8BBE;&#x7F6E;&#x7684;&#x652F;&#x6301;arm&#x6307;&#x4EE4;&#x96C6;&#x7248;&#x672C;&#x6709;&#xFF1A;armv7/armv7s/arm64&#xFF0C;&#x5BF9;&#x5E94;&#x7684;Architectures&#x8BBE;&#x7F6E;&#x7684;&#x652F;&#x6301;arm&#x6307;&#x4EE4;&#x96C6;&#x7248;&#x672C;&#x6709;&#xFF1A;arm64&#xFF0C;&#x8FD9;&#x65F6;Xcode&#x53EA;&#x4F1A;&#x751F;&#x6210;&#x4E00;&#x4E2A;arm64&#x6307;&#x4EE4;&#x96C6;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x5305;&#x3002;</p>
 <p>&#x3000;&#x3000;&#x51CF;&#x5C11;&#x5B89;&#x88C5;&#x5305;&#x4E2D;&#x7684;&#x6307;&#x4EE4;&#x96C6;&#x6570;&#x636E;&#x5305;&#x53EF;&#x4EE5;&#x51CF;&#x5C0F;&#x6253;&#x5305;ipa&#x7684;&#x5927;&#x5C0F;&#x3002;&#x3000;&#x3000;
 &#x3000;&#x3000;</p>
-<h3 id="build-active-architecture-only"><a name="build-active-architecture-only" class="anchor-navigation-ex-anchor" href="#build-active-architecture-only"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.5. Build Active Architecture Only:</h3>
+<h3 id="build-active-architecture-only">Build Active Architecture Only:</h3>
 <p>&#x9ED8;&#x8BA4;Debug&#x7684;&#x65F6;&#x5019;&#x8BBE;&#x7F6E;&#x4E3A;YES&#xFF0C;Release&#x7684;&#x65F6;&#x5019;&#x8BBE;&#x7F6E;&#x4E3A;NO&#x3002;&#x8BBE;&#x7F6E;&#x4E3A;YES&#x662F;&#x53EA;&#x7F16;&#x8BD1;&#x5F53;&#x524D;&#x7684;architecture&#x7248;&#x672C;&#xFF0C;&#x751F;&#x6210;&#x7684;&#x5305;&#x53EA;&#x5305;&#x542B;&#x5F53;&#x524D;&#x8FDE;&#x63A5;&#x8BBE;&#x5907;&#x7684;&#x6307;&#x4EE4;&#x96C6;&#x4EE3;&#x7801;&#x3002;&#x8BBE;&#x7F6E;&#x4E3A;NO&#xFF0C;&#x5219;&#x751F;&#x6210;&#x7684;&#x5305;&#x5305;&#x542B;&#x6240;&#x6709;&#x7684;&#x6307;&#x4EE4;&#x96C6;&#x4EE3;&#x7801;&#xFF08;&#x4E0A;&#x9762;&#x7684;Valid Architectures&#x8DDF;Architectures&#x7684;&#x4EA4;&#x96C6;&#xFF09;&#x3002;&#x56E0;&#x6B64;&#x4E3A;&#x4E86;&#x8C03;&#x8BD5;&#x901F;&#x5EA6;&#x66F4;&#x5FEB;&#xFF0C;&#x5219;Debug&#x5E94;&#x8BE5;&#x8BBE;&#x7F6E;&#x4E3A;YES&#x3002;</p>
-<h3 id="&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#x5927;&#x5C0F;&#x9650;&#x5236;"><a name="&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#x5927;&#x5C0F;&#x9650;&#x5236;" class="anchor-navigation-ex-anchor" href="#&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#x5927;&#x5C0F;&#x9650;&#x5236;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1.6. &#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#x5927;&#x5C0F;&#x9650;&#x5236;</h3>
+<h3 id="&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#x5927;&#x5C0F;&#x9650;&#x5236;">&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#x5927;&#x5C0F;&#x9650;&#x5236;</h3>
 <p>&#x6839;&#x636E;&#x6700;&#x5927;&#x6784;&#x5EFA;&#x7248;&#x672C;&#x6587;&#x4EF6;&#x5927;&#x5C0F;&#x63CF;&#x8FF0;&#xFF0C;&#x82F9;&#x679C;&#x5BF9;&#x53EF;&#x6267;&#x884C;&#x6587;&#x4EF6;&#x5927;&#x5C0F;&#x6709;&#x660E;&#x786E;&#x9650;&#x5236;&#xFF0C;&#x8D85;&#x8FC7;&#x8BE5;&#x9650;&#x5236;&#x4F1A;&#x5BFC;&#x81F4; App &#x5BA1;&#x6838;&#x88AB;&#x62D2;&#x3002;&#x5177;&#x4F53;&#x9650;&#x5236;&#x5982;&#x4E0B;&#xFF1A;</p>
 <ul>
 <li>iOS 7 &#x4E4B;&#x524D;&#xFF0C;&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;&#x4E2D;&#x6240;&#x6709;&#x7684; __TEXT &#x6BB5;&#x603B;&#x548C;&#x4E0D;&#x5F97;&#x8D85;&#x8FC7; 80 MB</li>
 <li>iOS 7.X &#x81F3; iOS 8.X &#xFF0C;&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x6BCF;&#x4E2A;&#x7279;&#x5B9A;&#x67B6;&#x6784;&#x4E2D;&#x7684; __TEXT &#x6BB5;&#x4E0D;&#x5F97;&#x8D85;&#x8FC7; 60 MB</li>
 <li>iOS 9.0 &#x4E4B;&#x540E;&#xFF0C;&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;&#x4E2D;&#x6240;&#x6709;&#x7684; __TEXT &#x6BB5;&#x603B;&#x548C;&#x4E0D;&#x5F97;&#x8D85;&#x8FC7; 500 MB</li>
 </ul>
-<h2 id="swift"><a name="swift" class="anchor-navigation-ex-anchor" href="#swift"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. Swift</h2>
-<h3 id="swift-&#x6807;&#x51C6;&#x5E93;"><a name="swift-&#x6807;&#x51C6;&#x5E93;" class="anchor-navigation-ex-anchor" href="#swift-&#x6807;&#x51C6;&#x5E93;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1. Swift &#x6807;&#x51C6;&#x5E93;</h3>
+<h2 id="swift">Swift</h2>
+<h3 id="swift-&#x6807;&#x51C6;&#x5E93;">Swift &#x6807;&#x51C6;&#x5E93;</h3>
 <p>Swift &#x6807;&#x51C6;&#x5E93;&#x5728;&#x6253;&#x5305;&#x52A8;&#x6001;&#x5E93;&#x65F6;&#xFF0C;&#x4F1A;&#x5B8C;&#x6574;&#x653E;&#x5230; Frameworks &#x6587;&#x4EF6;&#x5939;&#x4E0B;</p>
 <ul>
 <li>&#x6253;&#x5305;&#x67B6;&#x6784;&#x5305;&#x542B;: armv7&#x3001;armv7s&#x3001;arm64&#x3001;arm64e</li>
@@ -840,13 +861,15 @@ Swift &#x6807;&#x51C6;&#x5E93;&#xFF0C;&#x5728;&#x5206;&#x53D1;&#x5230;&#x5177;&#
 <p>UniPack &#x89E3;&#x51B3;&#x65B9;&#x6848;</p>
 <p>&#x5C06;&#x52A8;&#x6001;&#x5E93;&#x6253;&#x8FDB;&#x4E00;&#x4E2A;&#x7A7A;&#x58F3; App&#xFF0C;&#x5F85;Xcode&#x4F18;&#x5316;&#x540E;&#x5C06;ipa&#x4E2D;&#x52A8;&#x6001;&#x5E93;&#x548C;Swift&#x6587;&#x4EF6;&#x62F7;&#x51FA;&#x5E76;&#x7B7E;&#x540D;&#xFF0C;&#x6253;&#x5230;&#x76EE;&#x6807;ipa&#x4E2D;</p>
 <h3 id=""> </h3>
-<h2 id="&#x53C2;&#x8003;"><a name="&#x53C2;&#x8003;" class="anchor-navigation-ex-anchor" href="#&#x53C2;&#x8003;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. &#x53C2;&#x8003;</h2>
+<h2 id="&#x53C2;&#x8003;">&#x53C2;&#x8003;</h2>
 <ul>
 <li><a href="https://www.zybuluo.com/qidiandasheng/note/1662385" target="_blank">https://www.zybuluo.com/qidiandasheng/note/1662385</a></li>
 <li><a href="https://juejin.cn/post/6844904169938092045#heading-23" target="_blank">https://juejin.cn/post/6844904169938092045#heading-23</a></li>
 <li><a href="https://www.cnblogs.com/lulushen/p/8135269.html" target="_blank">https://www.cnblogs.com/lulushen/p/8135269.html</a></li>
 </ul>
-
+<footer class="page-footer">
+undefined<a href="https://beian.miit.gov.cn/" target="_blank">&#x7CA4;ICP&#x5907;2026025152&#x53F7;</a>
+</footer>
                                 
                                 </section>
                             
@@ -905,7 +928,7 @@ Swift &#x6807;&#x51C6;&#x5E93;&#xFF0C;&#x5728;&#x5206;&#x53D1;&#x5230;&#x5177;&#
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"App Thinning","level":"2.1.3","depth":2,"next":{"title":"Swift","level":"2.2","depth":1,"path":"Swift/README.md","ref":"Swift/README.md","articles":[{"title":"Swift Tips","level":"2.2.1","depth":2,"path":"Swift/Swift-Tips.md","ref":"Swift/Swift-Tips.md","articles":[{"title":"Swift第三方库","level":"2.2.1.1","depth":3,"path":"Swift/Swift第三方库.md","ref":"Swift/Swift第三方库.md","articles":[]},{"title":"内存管理","level":"2.2.1.2","depth":3,"path":"Swift/Swift内存管理.md","ref":"Swift/Swift内存管理.md","articles":[]},{"title":"闭包","level":"2.2.1.3","depth":3,"path":"Swift/闭包.md","ref":"Swift/闭包.md","articles":[]},{"title":"字符串和字符","level":"2.2.1.4","depth":3,"path":"Swift/字符串和字符.md","ref":"Swift/字符串和字符.md","articles":[]},{"title":"Swift OC 混编","level":"2.2.1.5","depth":3,"path":"Swift/Swift-OC混编.md","ref":"Swift/Swift-OC混编.md","articles":[]}]}]},"previous":{"title":"AutoLayout自动布局","level":"2.1.2","depth":2,"path":"Foundation/AutoLayout自动布局.md","ref":"Foundation/AutoLayout自动布局.md","articles":[]},"dir":"ltr"},"config":{"plugins":["code","alerts","anchor-navigation-ex","search-plus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"showLevel":true,"showGoTop":true,"printLog":false,"multipleH":false,"multipleH1":true,"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false}},"alerts":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Note","gitbook":"*"},"file":{"path":"Foundation/AppThinning.md","mtime":"2023-07-10T06:08:23.113Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-07-10T06:09:13.037Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"App Thinning","level":"2.1.3","depth":2,"next":{"title":"Swift","level":"2.2","depth":1,"path":"Swift/README.md","ref":"Swift/README.md","articles":[{"title":"Swift Tips","level":"2.2.1","depth":2,"path":"Swift/Swift-Tips.md","ref":"Swift/Swift-Tips.md","articles":[{"title":"Swift第三方库","level":"2.2.1.1","depth":3,"path":"Swift/Swift第三方库.md","ref":"Swift/Swift第三方库.md","articles":[]},{"title":"内存管理","level":"2.2.1.2","depth":3,"path":"Swift/Swift内存管理.md","ref":"Swift/Swift内存管理.md","articles":[]},{"title":"闭包","level":"2.2.1.3","depth":3,"path":"Swift/闭包.md","ref":"Swift/闭包.md","articles":[]},{"title":"字符串和字符","level":"2.2.1.4","depth":3,"path":"Swift/字符串和字符.md","ref":"Swift/字符串和字符.md","articles":[]},{"title":"Swift OC 混编","level":"2.2.1.5","depth":3,"path":"Swift/Swift-OC混编.md","ref":"Swift/Swift-OC混编.md","articles":[]}]}]},"previous":{"title":"AutoLayout自动布局","level":"2.1.2","depth":2,"path":"Foundation/AutoLayout自动布局.md","ref":"Foundation/AutoLayout自动布局.md","articles":[]},"dir":"ltr"},"config":{"plugins":["code","alerts","search-plus","icp"],"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"multipleH":false},"icp":{"link":"https://beian.miit.gov.cn/","style":{},"number":"粤ICP备2026025152号"},"alerts":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css","website":"styles/website.css"},"showLevel":false},"search-plus":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Note","gitbook":"*"},"file":{"path":"Foundation/AppThinning.md","mtime":"2026-03-16T11:56:33.461Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2026-03-16T11:57:02.937Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
