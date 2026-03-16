@@ -3,7 +3,6 @@
   "plugins": [
     "code",
     "alerts",
-    "anchor-navigation-ex",
     "search-plus",
     "icp"
   ],
